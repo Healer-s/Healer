@@ -309,6 +309,75 @@ static inline unsigned imajor(const struct inode *inode)
 
 	struct cdev *my_cdev = cdev_alloc();
 	my_cdev->ops	= &my_fops;
+现在可以将cdev结构嵌入到自己的设备特定结构中， scull就是这样做的，这种情况下，我们需要用下面的
+代码来初始化已分配到的结构：
+void cdev_init （ struct cdev *cdev, struct file_operations *fops);
+{	// 会将cdev里的ops成员与传进入的 fops成员进行帮定
+   memset(cdev, 0, sizeof *cdev);
+   INIT_LIST_HEAD(&cdev->list);
+   kobject_init(&cdev->kobj, &ktype_cdev_default);
+   cdev->ops = fops;
+}
+另外一个 struct cdev 的字段需要初始化，和file_operations 结构类似， struct cdev也有一个
+所有字段，应被设置为 THIS_MODULE.
+	
+在 cdev 结构设置好之后，最后的步骤是通过下面的调用告诉内核该结构的信息：
+	int cdev_add ( struct cdev *cdev, dev_t num, unsigned int count);
+这里, dev是cdev结构， num是该设备对应的第一个设备编号，count是应该和该设备关联的设备编号的数量，
+count经常取1， 
+	注： add 设备时可能失败，
 
+要从系统中移除一个字符设备,调用
+	void cdev_del(struct cdev *dev);
+	
+	
+struct cdev {
+   struct kobject kobj;          // 每个 cdev 都是一个 kobject
+   struct module *owner;       // 指向实现驱动的模块
+   const struct file_operations *ops;   // 操纵这个字符设备文件的方法
+   struct list_head list;       // 与 cdev 对应的字符设备文件的 inode->i_devices 的链表头
+   dev_t dev;                   // 起始设备编号
+   unsigned int count;       // 设备范围号大小
+};
 
+一个 cdev 一般它有两种定义初始化方式：静态的和动态的。
+静态内存定义初始化：
+struct cdev my_cdev;
+cdev_init(&my_cdev, &fops);
+my_cdev.owner = THIS_MODULE;
+
+动态内存定义初始化：
+struct cdev *my_cdev = cdev_alloc();
+my_cdev->ops = &fops;
+my_cdev->owner = THIS_MODULE;
+
+/*
+	* 设备驱动程序通过调用cdev_add把它所管理的设备对象的指针嵌入到一个类型为struct probe的节点之中，
+	* 然后再把该节点加入到cdev_map所实现的哈希链表中。
+	* 当设备驱动程序成功调用了cdev_add之后，就意味着一个字符设备对象已经加入到了系统，在需要的时候，
+	* 系统就可以找到它。对用户态的程序而言，cdev_add调用之后，就已经可以通过文件系统的接口呼叫到我们的驱动程序。
+*/
+void cdev_init(struct cdev *cdev, const struct file_operations *fops)
+{
+   memset(cdev, 0, sizeof *cdev);
+   INIT_LIST_HEAD(&cdev->list);
+   kobject_init(&cdev->kobj, &ktype_cdev_default);
+   cdev->ops = fops;
+}
+
+int cdev_add(struct cdev *p, dev_t dev, unsigned count)
+{
+   p->dev = dev;
+   p->count = count;
+   return kobj_map(cdev_map, dev, count, NULL, exact_match, exact_lock, p);
+}
+
+ //当一个字符设备驱动不再需要的时候（比如模块卸载），就可以用 cdev_del() 函数来释放 cdev 占用的内存。
+void cdev_del(struct cdev *p)
+{
+   cdev_unmap(p->dev, p->count);
+   kobject_put(&p->kobj);
+}
+
+注册一个 字符设备驱动程序的经典方式
 
