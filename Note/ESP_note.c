@@ -130,10 +130,10 @@ crw------- 1 root      root           3,   1 2018-03-31 18:00 ttyS1
 
 要获得dev_t的主设备号或次设备号:应使用
 #include <linux/kdev_t.h>
-MAJOR(dev_t dev);
-MINOR(dev_t dev);
+MAJOR(dev_t dev); //提取主设备号的方法
+MINOR(dev_t dev); //提取次设备号的方法
 相反，如果需要将主设备号和次设备号转换成dev_t类型，则使用:
-MKDEV(int major, int minor);
+MKDEV(int major, int minor); //major为主设备号 minor为次设备号
 
 // 主设备号用来区分 不同种类 的设备，而次设备号用来区分 同一类型 的多个设备
 
@@ -147,6 +147,7 @@ count:	是所请求的连续设备编号的个数
 name:	是和该编号范围关联的设备名称，它将出现在/proc/devices和sysfs中。
 返回值: 分配成功返回0，错误返回负的错误码，并且不能使用所请求的编号区域
 
+动态分配:
 int alloc_chrdev_region(dev_t *dev, unsigned int firstminor, unsigned int count, char ８name);
 在上面这个函数中,dev是仅用于输出的参数，在成功完成调用后将保存已分配范围第一个编号
 firstminor:		应该时要使用被请求的第一个次设备号,它通常时０
@@ -159,4 +160,155 @@ count,name参数：	与register_chrdev_region函数是一样的。
 // 注：　驱动程序应该始终使用动态分配 alloc_chrdev_region而不是register_chrdev_region函数
 动态分配的缺点：　由于分配的主设备号不能保证始终一致，所以无法预先创建设备节点，对于驱动程序的一般用法，这倒不是什么问题，因为
 一旦分配了设备号，就可以从/proc/devices中读取到
+
+/*   
+ *		文件操作 中基本的数据结构 	
+ **/
+1.大部分基本的驱动程序操作涉及到三个重要的内核数据结构，分别是 file_operations, file 和 inode
+
+1.1当获得一些设备编号，要将驱动程序操作链接到这些编号时，需要用到 file_operations 结构来建立这种连接
+该结构定义在 #include <linux/fs.h>中
+struct file_operations {
+//1.该字段不是操作，相反，它是指向“拥有”该结构的模块的指针，内核使用这个字段可以避免在模块操作正在被使用时卸载该模块。
+	struct module *owner;
+// llseek 用来修改文件的当前读写位置，将新的位置作为(正的)返回值返回，loff_t是一个偏移量，即使在32位平台上也占用64位的数据宽度
+// 出错返回一个负值，如果该函数指针为NULL,对seek的调用将会以某种不可语气的方式修改file结构中的位置计数器
+	loff_t (*llseek) (struct file *, loff_t, int);
+// 用来从设备中都去数据，该函数指针被赋为NULL时，将导致read系统调用出做，并返回 -EINVAL(Invalid argument非法参数)
+// 函数返回非负数表示成功读取的字节数，（返回值：signed size 数据类型），通常就是目标平台的固有整数
+	ssize_t (*read) (struct file *, char __user *, size_t, loff_t *);
+//	向设备发送数据没如果没有这个函数，write系统调用会向程序返回一个 -EINVAL,如果返回值非负数，则表示成功写入的字节数
+	ssize_t (*write) (struct file *, const char __user *, size_t, loff_t *);
+//	初始化一个一步的读取操作--即在函数返回之前可能不会完成的读取操作，如果该方法为NULL，所有操作将通过read同步处理
+	ssize_t (*aio_read) (struct kiocb *, const struct iovec *, unsigned long, loff_t);
+//	初始化设备上的异步写入操作
+	ssize_t (*aio_write) (struct kiocb *, const struct iovec *, unsigned long, loff_t);
+//	对于设备文件来说，这个字段应该为NULL，它仅用于读取目录，之对文件系统有用
+	int (*readdir) (struct file *, void *, filldir_t);
+//	poll方法是poll，epoll和select这个三个系统调用的后端实现，可以查询是否被阻塞，如果此处为NULL,则设备会被认为i可读可写
+//	并且不会被阻塞
+	unsigned int (*poll) (struct file *, struct poll_table_struct *);
+//	系统调用ioctl提供了一种执行设备特定命令的方法
+	long (*unlocked_ioctl) (struct file *, unsigned int, unsigned long);
+	long (*compat_ioctl) (struct file *, unsigned int, unsigned long);
+//	用于请求将设备内存映射到进程地址空间，如果设备没有实现这个方法，那么mmap系统调用将返回 —ENODEV
+	int (*mmap) (struct file *, struct vm_area_struct *);
+//	尽管这个始终是对设备文件执行的第一个操作，然后却并不要求驱动一定要声明一个对应的方法，如果这个入
+//	口为NULL,设备的打开操作永远成功，但是系统不会通知驱动程序
+	int (*open) (struct inode *, struct file *);
+//	对flush操作的调用发生在进程关闭设备文件描述符副本的适合，它应该执行设备上尚未完结的操作。
+	int (*flush) (struct file *, fl_owner_t id);
+//	当file结构被释放时，将调用这个操作，与open相仿，也可以将release设置为NULL
+	int (*release) (struct inode *, struct file *);
+//	该方法是fsync系统调用的后端实现，用户调用它来刷新待处理的数据，如果驱动程序没有实现这一方法，fsync系统调用返回-EINVAL
+	int (*fsync) (struct file *, loff_t, loff_t, int datasync);
+//	这是fsync方法的异步版本
+	int (*aio_fsync) (struct kiocb *, int datasync);
+//	这个操作用来通知设备其FASYNC标志发生了变化，异步同志是比较高级的话题，
+	int (*fasync) (int, struct file *, int);
+//	lock方法用于实现文件锁定，锁定是常规文件不可缺少的特性，但是设备驱动几乎从来不会实现这个方法
+	int (*lock) (struct file *, int, struct file_lock *);
+//	sendpage是sendfile系统调用的另外一般，它由内核调用以将数据发送到对应文件，每次一个数据页，设备驱动程序通常也不需要实现sendpage
+	ssize_t (*sendpage) (struct file *, struct page *, int, size_t, loff_t *, int);
+//	该方法的目的是在进程的地址空间中找到一个合适的位置，以便底层设备中的内存段映射到该位置，大部分驱动可设置该方法为NULL
+	unsigned long (*get_unmapped_area)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long);
+//	该方法允许模块检查传递给fcntl (F_SETFL)调用的标志
+	int (*check_flags)(int);
+	int (*flock) (struct file *, int, struct file_lock *);
+	ssize_t (*splice_write)(struct pipe_inode_info *, struct file *, loff_t *, size_t, unsigned int);
+	ssize_t (*splice_read)(struct file *, loff_t *, struct pipe_inode_info *, size_t, unsigned int);
+	int (*setlease)(struct file *, long, struct file_lock **);
+	long (*fallocate)(struct file *file, int mode, loff_t offset,
+			  loff_t len);
+};
+这里里面包含了一组函数指针，每个打开的文件，在内部由一个file结构表示，和一组函数关联，通过包含指向一个file_operations
+结构的f_op字段，这些操作主要用来实现系统调用，命名为open ,read 等。我么么可以认为文件是一个“对象”，而操作它的函数是“方法”。
+如果采用面对对象变成的术语来表达就是，对象声明的动作将作用于其本身。
+
+1.设备驱动程序所实现的最重要的设备方法，它的file_operations结构被初始化成如下形式：
+static const struct file_operations __fops = {				\
+	.owner	 = THIS_MODULE,						\
+	.open	 = scull_open,					\
+	.release = scull_release,					\
+	.read	 = scull_read,					\
+	.write	 = scull_write,					\
+	.llseek	 = sculle_llseek,					\
+	.unlocked_ioctl = sculle_ioctl,				\
+};
+以上声明采用了标准C的标记化结构初始化语法，这种语法是值得被采用的，因为它是驱动程序在结构的定义发生变化时更具有可移植性
+
+
+/*
+ * 
+ * 				file 结构
+ * 
+ */
+在<linux/fs.h>中定义的struct file是设备驱动程序所使用的第二个最重要的数据结构。
+注： file 结构与用户空间程序中的 FILE 没有任何关联. 互不涉及。
+
+在内核源码中，指向 struct file 的指针通常被称为 file 或 filp（文件指针）
+file 指的是结构本身， filp 则是指向该结构的指针
+重要成员：
+mode_t f_mode:	文件模式，它通过FMODE_READ和FMODE_WRITE位来表示文件是否可读或可写
+注：	一般会认为自己需要在 open/ioctl 函数中查看该字段，以便查看是否有读写访问权限，驱动程序不需要做这个操作，如果
+没有对文件的读写操作权限，会被内核直接拒绝。
+
+loff_t	f_pos:		当前的读写位置，loff_t是一个64位的数，如果需要知道文件的当前位置，可以读取该值
+
+unsigned int f_flags	:文件标志，如：O_RDONLY,O_NONBLOCK和O_SYNC,用来检查用户请求的是否非阻塞式的操作
+驱动程序一般只用得到O_NONBLOCK标志，,检查读写权限应查看 f_mode/f_flags,定义在<linux/fcntl.h>
+
+struct file_operations *f_op:
+	与文件相关的操作，内核在执行open操作时对这个指针赋值，以后需要处理这写操作时就读取该指针，
+
+void *private_data	:open系统调用在调用驱动程序的open方法前将这个指针置为NULL
+struct dentry *f_dentry:		文件对应的目录项结构.设备驱动程序一般不需要此结构
+
+/*
+ * 
+ * 			Inode结构
+ * 
+ */
+1.内核用inode结构在内部表示文件，因此它和file结构不同，后在表示打开的文件符
+对单个文件，可能会有许多表示打开的文件妙舒服的file结构，但她们都指向单个inode结构
+
+inode 结构中包含了大量有关文件的信息，作为常规，只有下面两个字段对编写驱动程序代码有用：
+
+dev_t i_rdev:	对表示设备文件的inode结构，该字段包含了真正的设备编号
+
+struct cdev *i_cdev:
+struct cdev 是表示字符设备的内核的内部结构，当inode指向一个字符设备文件时，该字段包含了指向struct cdev结构的指针
+
+i_rdev的类型在2.5开发系列版本中发生了变化，这破坏了大量驱动程序代码的兼容性，为了鼓励编写可移植性更强的代码，内核
+开发者增加了两个新的宏，可以用 inode 中获得 .0主设备号和次设备号
+unsigned int iminor (struct inode *inode);
+unsigned int imajor (struct inode *inode);
+
+为了防止因为类似的改变而出现问题，我们应该使用上述宏，而不是直接操作i_rdev;
+
+static inline unsigned iminor(const struct inode *inode)
+{
+	return MINOR(inode->i_rdev);
+}
+MAJOR(dev_t dev); //提取主设备号的方法
+MINOR(dev_t dev); //提取次设备号的方法
+相反，如果需要将主设备号和次设备号转换成dev_t类型，则使用:
+MKDEV(int major, int minor); //major为主设备号 minor为次设备号
+static inline unsigned imajor(const struct inode *inode)
+{
+	return MAJOR(inode->i_rdev);
+}
+
+/**
+ * 
+ * 			字符设备的注册
+ * 
+ */
+1.内核内部使用struct cdev 结构来表示字符设备，在内核调用设备的操作之前，必须分配并注册一个或者
+多个上述结构，因此需要 #include<linux/cdev.h>
+
+	struct cdev *my_cdev = cdev_alloc();
+	my_cdev->ops	= &my_fops;
+
+
 
