@@ -1,2 +1,2 @@
 # Healer
-C
+Study
