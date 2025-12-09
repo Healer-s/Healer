@@ -1,0 +1,1080 @@
+POWER MANAGER (dumpsys power)
+
+Power Manager State:
+  Settings power_manager_constants:
+    no_cached_wake_locks=true
+  mDirty=0x0
+  mWakefulness=Asleep
+  mWakefulnessChanging=false
+  mIsPowered=true
+  mPlugType=2
+  mBatteryLevel=57
+  mBatteryLevelWhenDreamStarted=0
+  mDockState=0
+  mStayOn=false
+  mProximityPositive=false
+  mBootCompleted=true
+  mSystemReady=true
+  mEnhancedDischargeTimeElapsed=0
+  mLastEnhancedDischargeTimeUpdatedElapsed=0
+  mEnhancedDischargePredictionIsPersonalized=false
+  mHalAutoSuspendModeEnabled=true
+  mHalInteractiveModeEnabled=false
+  mWakeLockSummary=0x0
+  mNotifyLongScheduled=+3s20ms
+  mNotifyLongDispatched=-1m6s403ms
+  mNotifyLongNextCheck=(none)
+  mRequestWaitForNegativeProximity=false
+  mInterceptedPowerKeyForProximity=false
+  mSandmanScheduled=false
+  mBatteryLevelLow=false
+  mLightDeviceIdleMode=false
+  mDeviceIdleMode=false
+  mDeviceIdleWhitelist=[1001, 2000, 10025, 10033, 10082]
+  mDeviceIdleTempWhitelist=[]
+  mLowPowerStandbyActive=false
+  mLastWakeTime=2598544 (57079 ms ago)
+  mLastSleepTime=2608544 (47079 ms ago)
+  mLastSleepReason=timeout
+  mLastInteractivePowerHintTime=2598544 (57079 ms ago)
+  mLastScreenBrightnessBoostTime=0 (2655623 ms ago)
+  mScreenBrightnessBoostInProgress=false
+  mHoldingWakeLockSuspendBlocker=false
+  mHoldingDisplaySuspendBlocker=false
+  mLastFlipTime=0
+  mIsFaceDown=false
+
+Settings and Configuration:
+  mDecoupleHalAutoSuspendModeFromDisplayConfig=true
+  mDecoupleHalInteractiveModeFromDisplayConfig=true
+  mWakeUpWhenPluggedOrUnpluggedConfig=true
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mTheaterModeEnabled=false
+  mSuspendWhenScreenOffDueToProximityConfig=true
+  mDreamsSupportedConfig=true
+  mDreamsEnabledByDefaultConfig=true
+  mDreamsActivatedOnSleepByDefaultConfig=false
+  mDreamsActivatedOnDockByDefaultConfig=true
+  mDreamsEnabledOnBatteryConfig=false
+  mDreamsBatteryLevelMinimumWhenPoweredConfig=-1
+  mDreamsBatteryLevelMinimumWhenNotPoweredConfig=15
+  mDreamsBatteryLevelDrainCutoffConfig=5
+  mDreamsEnabledSetting=true
+  mDreamsActivateOnSleepSetting=false
+  mDreamsActivateOnDockSetting=true
+  mDozeAfterScreenOff=true
+  mMinimumScreenOffTimeoutConfig=10000
+  mMaximumScreenDimDurationConfig=7000
+  mMaximumScreenDimRatioConfig=0.20000005
+  mAttentiveTimeoutConfig=-1
+  mAttentiveTimeoutSetting=-1
+  mAttentiveWarningDurationConfig=30000
+  mScreenOffTimeoutSetting=60000
+  mSleepTimeoutSetting=-1
+  mMaximumScreenOffTimeoutFromDeviceAdmin=9223372036854775807 (enforced=false)
+  mStayOnWhilePluggedInSetting=0
+  mScreenBrightnessModeSetting=0
+  mScreenBrightnessOverrideFromWindowManager=NaN
+  mUserActivityTimeoutOverrideFromWindowManager=10000
+  mUserInactiveOverrideFromWindowManager=false
+  mDozeScreenStateOverrideFromDreamManager=0
+  mDrawWakeLockOverrideFromSidekick=false
+  mDozeScreenBrightnessOverrideFromDreamManager=-1
+  mScreenBrightnessMinimum=0.0
+  mScreenBrightnessMaximum=1.0
+  mScreenBrightnessDefault=0.4
+  mDoubleTapWakeEnabled=false
+  mIsVrModeEnabled=false
+  mForegroundProfile=0
+  mUserId=0
+
+Attentive timeout: -1 ms
+Sleep timeout: -1 ms
+Screen off timeout: 10000 ms
+Screen dim duration: 2000 ms
+
+UID states (changing=false changed=false):
+  UID 1000:   ACTIVE  count=0 state=0
+  UID 1001:   ACTIVE  count=0 state=0
+  UID 1027:   ACTIVE  count=0 state=0
+  UID 1068:   ACTIVE  count=0 state=0
+  UID 1073:   ACTIVE  count=0 state=0
+  UID u0a32: INACTIVE  count=0 state=8
+  UID u0a46:   ACTIVE  count=0 state=4
+  UID u0a77:   ACTIVE  count=0 state=7
+  UID u0a81:   ACTIVE  count=0 state=5
+  UID u0a86:   ACTIVE  count=0 state=5
+  UID u0a90: INACTIVE  count=0 state=12
+  UID u0a100:   ACTIVE  count=0 state=0
+  UID u0a101:   ACTIVE  count=0 state=5
+
+Looper state:
+  Looper (PowerManagerService, tid 53) {296e597}
+    Message 0: { when=+3s19ms what=4 target=android.os.Handler }
+    Message 1: { when=+4m13s3ms what=3 target=com.android.server.display.AutomaticBrightnessController$AutomaticBrightnessHandler }
+    (Total messages: 2, polling=true, quitting=false)
+
+Wake Locks: size=0
+
+Suspend Blockers: size=5
+  PowerManagerService.Booting: ref count=0 []
+  PowerManagerService.WakeLocks: ref count=0 []
+  PowerManagerService.Display: ref count=0 []
+  PowerManagerService.Broadcasts: ref count=0 []
+  PowerManagerService.WirelessChargerDetector: ref count=0 []
+
+Display Power: com.android.server.power.PowerManagerService$1@dfdf384
+
+Battery saving stats:
+  Battery Saver is currently: OFF
+    Times full enabled: 0
+    Times adaptive enabled: 0
+  
+  Drain stats:
+                     Battery saver OFF                          ON
+  NonDoze NonIntr:     27m      0mAh(  0%)      0.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+             Intr:     41m    235mAh(  8%)    344.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+  Deep    NonIntr:      0m      0mAh(  0%)      0.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+             Intr:      0m      0mAh(  0%)      0.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+  Light   NonIntr:      0m      0mAh(  0%)      0.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+             Intr:      0m      0mAh(  0%)      0.0mAh/h          0m      0mAh(  0%)      0.0mAh/h
+
+Battery saver policy (*NOTE* they only apply when battery saver is ON):
+  Settings: battery_saver_constants
+    value: 
+  Settings: (overlay)
+    value: 
+  DeviceConfig: battery_saver
+    N/A
+  mAccessibilityEnabled=false
+  mAutomotiveProjectionActive=false
+  mPolicyLevel=0
+  
+  Policy 'default full'
+    advertise_is_enabled=true
+    disable_vibration=true
+    disable_animation=false
+    defer_full_backup=true
+    defer_keyvalue_backup=true
+    enable_firewall=true
+    enable_datasaver=false
+    disable_launch_boost=true
+    enable_brightness_adjustment=false
+    adjust_brightness_factor=0.5
+    location_mode=3
+    force_all_apps_standby=true
+    force_background_check=true
+    disable_optional_sensors=true
+    disable_aod=true
+    soundtrigger_mode=1
+    enable_quick_doze=true
+    enable_night_mode=true
+  
+  Policy 'current full'
+    advertise_is_enabled=true
+    disable_vibration=true
+    disable_animation=false
+    defer_full_backup=true
+    defer_keyvalue_backup=true
+    enable_firewall=true
+    enable_datasaver=false
+    disable_launch_boost=true
+    enable_brightness_adjustment=false
+    adjust_brightness_factor=0.5
+    location_mode=3
+    force_all_apps_standby=true
+    force_background_check=true
+    disable_optional_sensors=true
+    disable_aod=true
+    soundtrigger_mode=1
+    enable_quick_doze=true
+    enable_night_mode=true
+  
+  Policy 'default adaptive'
+    advertise_is_enabled=false
+    disable_vibration=false
+    disable_animation=false
+    defer_full_backup=false
+    defer_keyvalue_backup=false
+    enable_firewall=false
+    enable_datasaver=false
+    disable_launch_boost=false
+    enable_brightness_adjustment=false
+    adjust_brightness_factor=1.0
+    location_mode=0
+    force_all_apps_standby=false
+    force_background_check=false
+    disable_optional_sensors=false
+    disable_aod=false
+    soundtrigger_mode=0
+    enable_quick_doze=false
+    enable_night_mode=false
+  
+  Policy 'current adaptive'
+    advertise_is_enabled=false
+    disable_vibration=false
+    disable_animation=false
+    defer_full_backup=false
+    defer_keyvalue_backup=false
+    enable_firewall=false
+    enable_datasaver=false
+    disable_launch_boost=false
+    enable_brightness_adjustment=false
+    adjust_brightness_factor=1.0
+    location_mode=0
+    force_all_apps_standby=false
+    force_background_check=false
+    disable_optional_sensors=false
+    disable_aod=false
+    soundtrigger_mode=0
+    enable_quick_doze=false
+    enable_night_mode=false
+  
+  Policy 'effective'
+    advertise_is_enabled=false
+    disable_vibration=false
+    disable_animation=false
+    defer_full_backup=false
+    defer_keyvalue_backup=false
+    enable_firewall=false
+    enable_datasaver=false
+    disable_launch_boost=false
+    enable_brightness_adjustment=false
+    adjust_brightness_factor=1.0
+    location_mode=0
+    force_all_apps_standby=false
+    force_background_check=false
+    disable_optional_sensors=false
+    disable_aod=false
+    soundtrigger_mode=0
+    enable_quick_doze=false
+    enable_night_mode=false
+
+Battery saver state machine:
+  Enabled=false
+    full=false
+    adaptive=false
+  mState=1
+  mLastChangedIntReason=0
+  mLastChangedStrReason=null
+  mBootCompleted=true
+  mSettingsLoaded=true
+  mBatteryStatusSet=true
+  mIsPowered=true
+  mBatteryLevel=57
+  mIsBatteryLevelLow=false
+  mSettingAutomaticBatterySaver=0
+  mSettingBatterySaverEnabled=false
+  mSettingBatterySaverEnabledSticky=false
+  mSettingBatterySaverStickyAutoDisableEnabled=true
+  mSettingBatterySaverStickyAutoDisableThreshold=90
+  mSettingBatterySaverTriggerThreshold=0
+  mBatterySaverStickyBehaviourDisabled=false
+  mDynamicPowerSavingsDefaultDisableThreshold=80
+  mDynamicPowerSavingsDisableThreshold=80
+  mDynamicPowerSavingsEnableBatterySaver=false
+  mLastAdaptiveBatterySaverChangedExternallyElapsed=0
+AttentionDetector:
+ mIsSettingEnabled=false
+ mMaxExtensionMillis=900000
+ mPreDimCheckDurationMillis=2000
+ mEffectivePostDimTimeout=0
+ mLastUserActivityTime(excludingAttention)=2598544
+ mAttentionServiceSupported=false
+ mRequested=false
+
+Profile power states: size=0
+Display Group User Activity:
+  displayGroupId=0
+  userActivitySummary=0x0
+  lastUserActivityTime=2598544 (57080 ms ago)
+  lastUserActivityTimeNoChangeLights=2498010 (157614 ms ago)
+  mWakeLockSummary=0x0
+
+Wireless Charger Detector State:
+  mGravitySensor={Sensor name="Gravity Sensor", vendor="AOSP", version=3, type=9, maxRange=19.6133, resolution=0.0012, power=0.002, minDelay=10000}
+  mPoweredWirelessly=false
+  mAtRest=false
+  mRestX=0.0, mRestY=0.0, mRestZ=0.0
+  mDetectionInProgress=false
+  mDetectionStartTime=0 (never)
+  mMustUpdateRestPosition=false
+  mTotalSamples=0
+  mMovingSamples=0
+  mFirstSampleX=0.0, mFirstSampleY=0.0, mFirstSampleZ=0.0
+  mLastSampleX=0.0, mLastSampleY=0.0, mLastSampleZ=0.0
+Wake Lock Log
+  12-09 06:02:25.977 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.009 - 1000 - REL NetworkStats
+  12-09 06:02:26.021 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.046 - 1000 - REL NetworkStats
+  12-09 06:02:26.115 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:26.143 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:26.233 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.237 - 1000 - ACQ WiredAccessoryManager (partial)
+  12-09 06:02:26.305 - 1000 - REL NetworkStats
+  12-09 06:02:26.310 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.347 - 1000 - REL NetworkStats
+  12-09 06:02:26.353 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.386 - 1000 - REL NetworkStats
+  12-09 06:02:26.397 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.431 - 1000 - REL NetworkStats
+  12-09 06:02:26.434 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.463 - 1000 - REL NetworkStats
+  12-09 06:02:26.466 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:26.483 - 1000 - REL NetworkStats
+  12-09 06:02:28.171 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.183 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.184 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.184 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.186 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.188 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.189 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.192 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.194 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.194 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.198 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.206 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.214 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.216 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.220 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.228 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.231 - 1000 - REL WiredAccessoryManager
+  12-09 06:02:28.239 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.240 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.243 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.250 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.255 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.256 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.259 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.260 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.273 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.274 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.278 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.279 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.289 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.290 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.292 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.293 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.296 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.302 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.310 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.319 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.330 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.332 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.338 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.340 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.354 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.358 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.359 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.360 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.362 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.363 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.366 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.366 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.368 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.369 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.372 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.373 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.375 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.376 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.381 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.382 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.384 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.394 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.399 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.399 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.404 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.414 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.417 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.418 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.426 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.427 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.431 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.432 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.437 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.438 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.441 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.442 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.446 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.447 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.450 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.451 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.454 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:28.457 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:28.572 - 1041 - ACQ AudioMix (partial)
+  12-09 06:02:28.574 - 1041 - ACQ AudioMix (partial)
+  12-09 06:02:29.047 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:02:29.079 - 1000 - REL NetworkStats
+  12-09 06:02:30.977 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.089 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.108 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.112 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.115 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.117 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.120 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.121 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.126 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.133 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.134 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.135 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.136 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.138 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.143 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.146 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.149 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.151 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.156 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.161 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.164 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.166 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.169 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.170 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.172 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.177 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.180 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.181 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.183 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.184 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.186 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.187 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.189 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.190 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.192 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.193 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.197 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.198 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.200 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.201 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.203 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.204 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.206 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.207 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.211 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.212 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.214 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.216 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.218 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.219 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.221 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.222 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.223 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.224 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.226 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.227 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.229 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.231 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.233 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.234 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.236 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.238 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.240 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.241 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.243 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.246 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.249 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.250 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.252 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.254 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.256 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.257 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.260 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.261 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.266 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.267 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.270 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.303 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.310 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.312 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.316 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.319 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.320 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.322 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.325 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.327 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.328 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.330 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.332 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.333 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.335 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.336 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.338 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.339 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.341 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.343 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.518 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.526 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.529 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.531 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.533 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.535 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.567 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.568 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.572 - 1041 - REL AudioMix
+  12-09 06:02:31.581 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.582 - 1041 - REL AudioMix
+  12-09 06:02:31.583 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.586 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.590 - 1002 - REL bluetooth_timer
+  12-09 06:02:31.777 - 1002 - ACQ bluetooth_timer (partial)
+  12-09 06:02:31.779 - 1002 - REL bluetooth_timer
+  12-09 06:02:33.376 - 1001 - ACQ GsmInboundSmsHandler (partial)
+  12-09 06:02:33.382 - 1001 - ACQ CdmaInboundSmsHandler (partial)
+  12-09 06:02:33.396 - 1001 - REL CdmaInboundSmsHandler
+  12-09 06:02:33.397 - 1001 - REL GsmInboundSmsHandler
+  12-09 06:02:37.285 - 1000 - ACQ SCREEN_FROZEN (partial)
+  12-09 06:02:37.998 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 06:02:38.051 - 1000 - ACQ *launch* (partial)
+  12-09 06:02:38.126 - 1000 - REL AlarmAlertWakeLock
+  12-09 06:02:38.209 - 1000 - REL SCREEN_FROZEN
+  12-09 06:02:38.317 - 1000 - REL *launch*
+  12-09 06:02:39.170 - 1000 - ACQ *launch* (partial)
+  12-09 06:02:40.385 - 1000 - ACQ SyncLoopWakeLock (partial)
+  12-09 06:02:40.508 - 1000 - REL SyncLoopWakeLock
+  12-09 06:02:42.590 - 1000 - ACQ *job*/c.a.p.m.m/c.a.p.m.MediaService (partial)
+  12-09 06:02:42.591 - 1000 - ACQ *job*/c.a.p.m.m/c.a.p.m.MediaService (partial)
+  12-09 06:02:42.624 - 1000 - REL *job*/c.a.p.m.m/c.a.p.m.MediaService
+  12-09 06:02:43.545 - 1000 - REL *launch*
+  12-09 06:02:45.141 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 06:02:45.169 - 1000 - REL AlarmAlertWakeLock
+  12-09 06:02:45.945 - 1000 - ACQ *job*/c.a.p/.h.HibernationJobService (partial)
+  12-09 06:02:45.946 - 1000 - ACQ *job*/c.a.p/.h.HibernationJobService (partial)
+  12-09 06:02:45.952 - 1000 - REL *job*/c.a.p/.h.HibernationJobService
+  12-09 06:02:45.961 - 1000 - REL *job*/c.a.p/.h.HibernationJobService
+  12-09 06:02:46.006 - 10033 - ACQ CalendarReceiver_Provider (partial)
+  12-09 06:02:46.018 - 10033 - REL CalendarReceiver_Provider
+  12-09 06:02:47.858 - 1000 - ACQ StartingAlertService (partial)
+  12-09 06:02:47.993 - 1000 - REL StartingAlertService
+  12-09 06:02:51.192 - 1000 - ACQ *alarm* (partial)
+  12-09 06:02:51.645 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:02:51.646 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:02:51.677 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:02:51.764 - 1000 - REL *alarm*
+  12-09 06:02:51.807 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:02:51.959 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:51.961 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:51.985 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:51.986 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:52.011 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:52.015 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:52.033 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:52.036 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:52.043 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:02:52.104 - 1000 - REL GnssVisibilityControl
+  12-09 06:02:54.457 - 1000 - REL *job*/c.a.p.m.m/c.a.p.m.MediaService
+  12-09 06:03:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 06:03:00.005 - 1000 - REL *alarm*
+  12-09 06:03:04.282 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:04.285 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:04.286 - 1000 - ACQ *launch* (partial)
+  12-09 06:03:04.416 - 1041 - REL AudioMix
+  12-09 06:03:04.416 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:04.544 - 1041 - REL AudioMix
+  12-09 06:03:04.545 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:05.413 - 1041 - REL AudioMix
+  12-09 06:03:05.413 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:05.809 - 1041 - REL AudioMix
+  12-09 06:03:05.809 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:06.103 - 1000 - REL *launch*
+  12-09 06:03:07.281 - 1041 - REL AudioMix
+  12-09 06:03:08.912 - 1041 - REL AudioMix
+  12-09 06:03:09.044 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:09.050 - 1041 - REL AudioMix
+  12-09 06:03:09.050 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:09.085 - 1000 - ACQ *launch* (partial)
+  12-09 06:03:09.381 - 1041 - REL AudioMix
+  12-09 06:03:09.382 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:10.850 - 1000 - REL *launch*
+  12-09 06:03:12.415 - 1041 - REL AudioMix
+  12-09 06:03:16.917 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:16.918 - 1041 - REL AudioMix
+  12-09 06:03:16.918 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:17.099 - 1041 - REL AudioMix
+  12-09 06:03:17.099 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:20.233 - 1041 - REL AudioMix
+  12-09 06:03:20.925 - 1000 - ACQ *alarm* (partial)
+  12-09 06:03:20.929 - 1000 - ACQ NetworkStats (partial)
+  12-09 06:03:21.040 - 1000 - REL NetworkStats
+  12-09 06:03:21.046 - 1000 - REL *alarm*
+  12-09 06:03:23.147 - 1000 - ACQ GnssVisibilityControl (partial)
+  12-09 06:03:23.147 - 1000 - REL GnssVisibilityControl
+  12-09 06:03:29.380 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:29.382 - 1041 - REL AudioMix
+  12-09 06:03:29.382 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:29.539 - 1000 - ACQ *launch* (partial)
+  12-09 06:03:29.553 - 1041 - REL AudioMix
+  12-09 06:03:29.554 - 1041 - ACQ AudioMix (partial)
+  12-09 06:03:29.833 - 1000 - REL *launch*
+  12-09 06:03:32.710 - 1041 - REL AudioMix
+  12-09 06:04:00.003 - 1000 - ACQ *alarm* (partial)
+  12-09 06:04:00.010 - 1000 - REL *alarm*
+  12-09 06:04:30.786 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 06:04:30.922 - 1000 - REL ActivityManager-Sleep
+  12-09 06:04:36.866 - 1000 - ACQ *alarm* (partial)
+  12-09 06:04:36.878 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 06:04:36.910 - 10086 - ACQ show keyguard (partial)
+  12-09 06:04:36.922 - 1000 - REL AlarmAlertWakeLock
+  12-09 06:04:36.923 - 1000 - REL *alarm*
+  12-09 06:04:36.990 - 10086 - REL show keyguard
+  12-09 06:04:42.848 - 1000 - ACQ *alarm* (partial)
+  12-09 06:04:42.858 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:04:42.859 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:04:42.878 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:04:42.886 - 1000 - REL *alarm*
+  12-09 06:04:42.901 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:05:23.644 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 06:05:23.671 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 06:05:23.731 - 1000 - ACQ *alarm* (partial)
+  12-09 06:05:23.742 - 1000 - REL *alarm*
+  12-09 06:05:24.779 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:24.780 - 1041 - REL AudioMix
+  12-09 06:05:24.780 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:25.054 - 1041 - REL AudioMix
+  12-09 06:05:25.055 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:26.931 - 1041 - REL AudioMix
+  12-09 06:05:26.931 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:26.940 - 1000 - ACQ *launch* (partial)
+  12-09 06:05:27.113 - 1041 - REL AudioMix
+  12-09 06:05:27.113 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:27.509 - 1000 - REL *launch*
+  12-09 06:05:29.788 - 1041 - REL AudioMix
+  12-09 06:05:29.788 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:29.824 - 1000 - ACQ *launch* (partial)
+  12-09 06:05:29.957 - 1041 - REL AudioMix
+  12-09 06:05:29.957 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:30.494 - 1000 - REL *launch*
+  12-09 06:05:32.095 - 1041 - REL AudioMix
+  12-09 06:05:32.095 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:32.108 - 1000 - ACQ *launch* (partial)
+  12-09 06:05:32.305 - 1041 - REL AudioMix
+  12-09 06:05:32.305 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:32.650 - 1000 - REL *launch*
+  12-09 06:05:33.413 - 1041 - REL AudioMix
+  12-09 06:05:33.413 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:33.586 - 1041 - REL AudioMix
+  12-09 06:05:33.586 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:34.565 - 1041 - REL AudioMix
+  12-09 06:05:34.565 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:34.743 - 1041 - REL AudioMix
+  12-09 06:05:34.744 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:36.321 - 1041 - REL AudioMix
+  12-09 06:05:36.321 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:36.423 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 06:05:36.447 - 1000 - REL AlarmAlertWakeLock
+  12-09 06:05:36.501 - 1041 - REL AudioMix
+  12-09 06:05:36.501 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:36.615 - 1041 - REL AudioMix
+  12-09 06:05:36.615 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:36.657 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 06:05:36.671 - 1000 - REL AlarmAlertWakeLock
+  12-09 06:05:36.827 - 1041 - REL AudioMix
+  12-09 06:05:36.828 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:37.853 - 1041 - REL AudioMix
+  12-09 06:05:37.854 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:38.022 - 1041 - REL AudioMix
+  12-09 06:05:38.022 - 1041 - ACQ AudioMix (partial)
+  12-09 06:05:41.187 - 1041 - REL AudioMix
+  12-09 06:05:41.440 - 1000 - ACQ *alarm* (partial)
+  12-09 06:05:41.465 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:05:41.466 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 06:05:41.475 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:05:41.488 - 1000 - REL *alarm*
+  12-09 06:05:41.509 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 06:05:42.790 - 1000 - ACQ time_detector (partial)
+  12-09 15:58:00.011 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:00.013 - 1000 - REL time_detector
+  12-09 15:58:00.031 - 1041 - REL AudioMix
+  12-09 15:58:00.031 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:00.095 - 1000 - ACQ AlarmAlertWakeLock (partial)
+  12-09 15:58:00.151 - 1000 - REL AlarmAlertWakeLock
+  12-09 15:58:00.205 - 1041 - REL AudioMix
+  12-09 15:58:00.221 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:00.848 - 1041 - REL AudioMix
+  12-09 15:58:00.848 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:00.934 - 1000 - ACQ *launch* (partial)
+  12-09 15:58:01.064 - 1041 - REL AudioMix
+  12-09 15:58:01.064 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:01.142 - 1000 - REL *launch*
+  12-09 15:58:01.824 - 1041 - REL AudioMix
+  12-09 15:58:01.824 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:01.847 - 1000 - ACQ *launch* (partial)
+  12-09 15:58:02.027 - 1041 - REL AudioMix
+  12-09 15:58:02.027 - 1041 - ACQ AudioMix (partial)
+  12-09 15:58:02.651 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 15:58:02.678 - 1000 - REL *launch*
+  12-09 15:58:05.144 - 1041 - REL AudioMix
+  12-09 15:58:05.182 - 1000 - ACQ *alarm* (partial)
+  12-09 15:58:05.194 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 15:58:05.195 - 1000 - ACQ *job*/c.a.p.c/.CalendarProviderJobService (partial)
+  12-09 15:58:05.211 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 15:58:05.217 - 1000 - REL *alarm*
+  12-09 15:58:05.233 - 1000 - REL *job*/c.a.p.c/.CalendarProviderJobService
+  12-09 15:59:00.001 - 1000 - ACQ *alarm* (partial)
+  12-09 15:59:00.002 - 1000 - REL *alarm*
+  12-09 16:00:00.000 - 1000 - ACQ *alarm* (partial)
+  12-09 16:00:00.006 - 1000 - REL *alarm*
+  12-09 16:00:02.332 - 1000 - REL WindowManager
+  12-09 16:01:00.005 - 1000 - ACQ *alarm* (partial)
+  12-09 16:01:00.008 - 1000 - REL *alarm*
+  12-09 16:01:02.620 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:01:02.824 - 1000 - REL ActivityManager-Sleep
+  12-09 16:01:09.353 - 1000 - ACQ *alarm* (partial)
+  12-09 16:01:09.358 - 10086 - ACQ show keyguard (partial)
+  12-09 16:01:09.365 - 1000 - REL *alarm*
+  12-09 16:01:09.417 - 10086 - REL show keyguard
+  12-09 16:02:26.995 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:02:27.024 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:02:27.078 - 1000 - ACQ *alarm* (partial)
+  12-09 16:02:27.081 - 1000 - REL *alarm*
+  12-09 16:02:28.149 - 1041 - ACQ AudioMix (partial)
+  12-09 16:02:28.149 - 1041 - REL AudioMix
+  12-09 16:02:28.149 - 1041 - ACQ AudioMix (partial)
+  12-09 16:02:28.253 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:02:28.449 - 1041 - REL AudioMix
+  12-09 16:02:28.449 - 1041 - ACQ AudioMix (partial)
+  12-09 16:02:31.564 - 1041 - REL AudioMix
+  12-09 16:03:00.003 - 1000 - ACQ *alarm* (partial)
+  12-09 16:03:00.009 - 1000 - REL *alarm*
+  12-09 16:04:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:04:00.003 - 1000 - REL *alarm*
+  12-09 16:04:28.280 - 1000 - REL WindowManager
+  12-09 16:05:00.005 - 1000 - ACQ *alarm* (partial)
+  12-09 16:05:00.007 - 1000 - REL *alarm*
+  12-09 16:05:28.601 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:05:28.827 - 1000 - REL ActivityManager-Sleep
+  12-09 16:05:34.348 - 1000 - ACQ *alarm* (partial)
+  12-09 16:05:34.355 - 10086 - ACQ show keyguard (partial)
+  12-09 16:05:34.363 - 1000 - REL *alarm*
+  12-09 16:05:34.412 - 10086 - REL show keyguard
+  12-09 16:05:36.165 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:05:36.249 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:05:37.411 - 1041 - ACQ AudioMix (partial)
+  12-09 16:05:37.412 - 1041 - REL AudioMix
+  12-09 16:05:37.412 - 1041 - ACQ AudioMix (partial)
+  12-09 16:05:37.471 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:05:37.672 - 1041 - REL AudioMix
+  12-09 16:05:37.673 - 1041 - ACQ AudioMix (partial)
+  12-09 16:05:40.789 - 1041 - REL AudioMix
+  12-09 16:05:43.327 - 1000 - ACQ *alarm* (partial)
+  12-09 16:05:43.328 - 1000 - REL *alarm*
+  12-09 16:06:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:06:00.002 - 1000 - REL *alarm*
+  12-09 16:07:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:07:00.003 - 1000 - REL *alarm*
+  12-09 16:07:37.454 - 1000 - REL WindowManager
+  12-09 16:07:59.327 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:07:59.511 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:07:59.703 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:07:59.894 - 1041 - ACQ AudioMix (partial)
+  12-09 16:07:59.894 - 1041 - REL AudioMix
+  12-09 16:07:59.894 - 1041 - ACQ AudioMix (partial)
+  12-09 16:08:00.031 - 1000 - ACQ *alarm* (partial)
+  12-09 16:08:00.037 - 1000 - REL *alarm*
+  12-09 16:08:00.202 - 1041 - REL AudioMix
+  12-09 16:08:00.205 - 1041 - ACQ AudioMix (partial)
+  12-09 16:08:00.258 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:08:00.583 - 10086 - ACQ show keyguard (partial)
+  12-09 16:08:00.734 - 1000 - REL WindowManager
+  12-09 16:08:00.830 - 10086 - REL show keyguard
+  12-09 16:08:00.840 - 1000 - REL ActivityManager-Sleep
+  12-09 16:08:01.375 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:08:01.562 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:08:02.537 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:08:02.558 - 1041 - REL AudioMix
+  12-09 16:08:02.558 - 1041 - ACQ AudioMix (partial)
+  12-09 16:08:02.839 - 1041 - REL AudioMix
+  12-09 16:08:02.839 - 1041 - ACQ AudioMix (partial)
+  12-09 16:08:05.958 - 1041 - REL AudioMix
+  12-09 16:09:00.001 - 1000 - ACQ *alarm* (partial)
+  12-09 16:09:00.002 - 1000 - REL *alarm*
+  12-09 16:09:00.006 - 1000 - ACQ *alarm* (partial)
+  12-09 16:09:00.007 - 1000 - REL *alarm*
+  12-09 16:10:00.001 - 1000 - ACQ *alarm* (partial)
+  12-09 16:10:00.004 - 1000 - REL *alarm*
+  12-09 16:10:02.540 - 1000 - REL WindowManager
+  12-09 16:11:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:11:00.003 - 1000 - REL *alarm*
+  12-09 16:11:02.762 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:11:02.935 - 1000 - REL ActivityManager-Sleep
+  12-09 16:11:09.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:11:09.348 - 10086 - ACQ show keyguard (partial)
+  12-09 16:11:09.352 - 1000 - REL *alarm*
+  12-09 16:11:09.401 - 10086 - REL show keyguard
+  12-09 16:12:48.459 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:12:48.478 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:12:48.495 - 1000 - ACQ *alarm* (partial)
+  12-09 16:12:48.506 - 1000 - REL *alarm*
+  12-09 16:12:49.429 - 1041 - ACQ AudioMix (partial)
+  12-09 16:12:49.430 - 1041 - REL AudioMix
+  12-09 16:12:49.430 - 1041 - ACQ AudioMix (partial)
+  12-09 16:12:49.472 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:12:49.697 - 1041 - REL AudioMix
+  12-09 16:12:49.697 - 1041 - ACQ AudioMix (partial)
+  12-09 16:12:52.816 - 1041 - REL AudioMix
+  12-09 16:13:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 16:13:00.008 - 1000 - REL *alarm*
+  12-09 16:14:00.009 - 1000 - ACQ *alarm* (partial)
+  12-09 16:14:00.012 - 1000 - REL *alarm*
+  12-09 16:14:49.476 - 1000 - REL WindowManager
+  12-09 16:15:00.005 - 1000 - ACQ *alarm* (partial)
+  12-09 16:15:00.006 - 1000 - REL *alarm*
+  12-09 16:15:49.702 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:15:49.915 - 1000 - REL ActivityManager-Sleep
+  12-09 16:15:56.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:15:56.348 - 10086 - ACQ show keyguard (partial)
+  12-09 16:15:56.353 - 1000 - REL *alarm*
+  12-09 16:15:56.400 - 10086 - REL show keyguard
+  12-09 16:18:07.342 - 1000 - ACQ *alarm* (partial)
+  12-09 16:18:07.344 - 1000 - REL *alarm*
+  12-09 16:18:08.032 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:18:08.184 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:18:09.096 - 1041 - ACQ AudioMix (partial)
+  12-09 16:18:09.100 - 1041 - REL AudioMix
+  12-09 16:18:09.100 - 1041 - ACQ AudioMix (partial)
+  12-09 16:18:09.178 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:18:09.397 - 1041 - REL AudioMix
+  12-09 16:18:09.397 - 1041 - ACQ AudioMix (partial)
+  12-09 16:18:12.514 - 1041 - REL AudioMix
+  12-09 16:19:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 16:19:00.005 - 1000 - REL *alarm*
+  12-09 16:20:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 16:20:00.006 - 1000 - REL *alarm*
+  12-09 16:20:09.188 - 1000 - REL WindowManager
+  12-09 16:21:00.009 - 1000 - ACQ *alarm* (partial)
+  12-09 16:21:00.011 - 1000 - REL *alarm*
+  12-09 16:21:09.411 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:21:09.621 - 1000 - REL ActivityManager-Sleep
+  12-09 16:21:16.342 - 1000 - ACQ *alarm* (partial)
+  12-09 16:21:16.343 - 10086 - ACQ show keyguard (partial)
+  12-09 16:21:16.347 - 1000 - REL *alarm*
+  12-09 16:21:16.403 - 10086 - REL show keyguard
+  12-09 16:21:51.716 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:21:51.729 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:21:52.737 - 1041 - ACQ AudioMix (partial)
+  12-09 16:21:52.738 - 1041 - REL AudioMix
+  12-09 16:21:52.738 - 1041 - ACQ AudioMix (partial)
+  12-09 16:21:52.828 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:21:53.076 - 1041 - REL AudioMix
+  12-09 16:21:53.077 - 1041 - ACQ AudioMix (partial)
+  12-09 16:21:56.213 - 1041 - REL AudioMix
+  12-09 16:22:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:22:00.003 - 1000 - REL *alarm*
+  12-09 16:23:00.003 - 1000 - ACQ *alarm* (partial)
+  12-09 16:23:00.006 - 1000 - REL *alarm*
+  12-09 16:23:52.837 - 1000 - REL WindowManager
+  12-09 16:24:00.005 - 1000 - ACQ *alarm* (partial)
+  12-09 16:24:00.009 - 1000 - REL *alarm*
+  12-09 16:24:53.107 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:24:53.332 - 1000 - REL ActivityManager-Sleep
+  12-09 16:24:59.348 - 1000 - ACQ *alarm* (partial)
+  12-09 16:24:59.356 - 10086 - ACQ show keyguard (partial)
+  12-09 16:24:59.361 - 1000 - REL *alarm*
+  12-09 16:24:59.412 - 10086 - REL show keyguard
+  12-09 16:26:57.744 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:26:57.751 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:26:57.796 - 1000 - ACQ *alarm* (partial)
+  12-09 16:26:57.803 - 1000 - REL *alarm*
+  12-09 16:26:58.645 - 1041 - ACQ AudioMix (partial)
+  12-09 16:26:58.645 - 1041 - REL AudioMix
+  12-09 16:26:58.645 - 1041 - ACQ AudioMix (partial)
+  12-09 16:26:58.720 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:26:58.935 - 1041 - REL AudioMix
+  12-09 16:26:58.935 - 1041 - ACQ AudioMix (partial)
+  12-09 16:27:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:27:00.003 - 1000 - REL *alarm*
+  12-09 16:27:02.050 - 1041 - REL AudioMix
+  12-09 16:28:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:28:00.004 - 1000 - REL *alarm*
+  12-09 16:28:58.730 - 1000 - REL WindowManager
+  12-09 16:29:00.007 - 1000 - ACQ *alarm* (partial)
+  12-09 16:29:00.008 - 1000 - REL *alarm*
+  12-09 16:29:43.446 - 1000 - ACQ *alarm* (partial)
+  12-09 16:29:43.456 - 1000 - ACQ NetworkStats (partial)
+  12-09 16:29:43.520 - 1000 - REL NetworkStats
+  12-09 16:29:43.528 - 1000 - REL *alarm*
+  12-09 16:29:58.981 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:29:59.192 - 1000 - REL ActivityManager-Sleep
+  12-09 16:30:05.336 - 1000 - ACQ *alarm* (partial)
+  12-09 16:30:05.358 - 10086 - ACQ show keyguard (partial)
+  12-09 16:30:05.364 - 1000 - REL *alarm*
+  12-09 16:30:05.414 - 10086 - REL show keyguard
+  12-09 16:31:11.285 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:31:11.312 - 1000 - ACQ *alarm* (partial)
+  12-09 16:31:11.323 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:31:11.332 - 1000 - REL *alarm*
+  12-09 16:31:12.229 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:31:12.272 - 1041 - ACQ AudioMix (partial)
+  12-09 16:31:12.273 - 1041 - REL AudioMix
+  12-09 16:31:12.273 - 1041 - ACQ AudioMix (partial)
+  12-09 16:31:12.548 - 1041 - REL AudioMix
+  12-09 16:31:12.548 - 1041 - ACQ AudioMix (partial)
+  12-09 16:31:15.660 - 1041 - REL AudioMix
+  12-09 16:32:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:32:00.004 - 1000 - REL *alarm*
+  12-09 16:33:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:33:00.004 - 1000 - REL *alarm*
+  12-09 16:33:12.238 - 1000 - REL WindowManager
+  12-09 16:34:00.005 - 1000 - ACQ *alarm* (partial)
+  12-09 16:34:00.006 - 1000 - REL *alarm*
+  12-09 16:34:12.481 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:34:12.716 - 1000 - REL ActivityManager-Sleep
+  12-09 16:34:19.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:34:19.348 - 10086 - ACQ show keyguard (partial)
+  12-09 16:34:19.353 - 1000 - REL *alarm*
+  12-09 16:34:19.399 - 10086 - REL show keyguard
+  12-09 16:38:07.349 - 1000 - ACQ *alarm* (partial)
+  12-09 16:38:07.351 - 1000 - REL *alarm*
+  12-09 16:39:30.854 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:39:30.862 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:39:30.922 - 1000 - ACQ *alarm* (partial)
+  12-09 16:39:30.938 - 1000 - REL *alarm*
+  12-09 16:39:31.613 - 1041 - ACQ AudioMix (partial)
+  12-09 16:39:31.613 - 1041 - REL AudioMix
+  12-09 16:39:31.613 - 1041 - ACQ AudioMix (partial)
+  12-09 16:39:31.674 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:39:31.879 - 1041 - REL AudioMix
+  12-09 16:39:31.879 - 1041 - ACQ AudioMix (partial)
+  12-09 16:39:35.031 - 1041 - REL AudioMix
+  12-09 16:40:00.001 - 1000 - ACQ *alarm* (partial)
+  12-09 16:40:00.003 - 1000 - REL *alarm*
+  12-09 16:41:00.003 - 1000 - ACQ *alarm* (partial)
+  12-09 16:41:00.007 - 1000 - REL *alarm*
+  12-09 16:41:31.675 - 1000 - REL WindowManager
+  12-09 16:42:00.003 - 1000 - ACQ *alarm* (partial)
+  12-09 16:42:00.004 - 1000 - REL *alarm*
+  12-09 16:42:00.012 - 1000 - ACQ *alarm* (partial)
+  12-09 16:42:00.013 - 1000 - REL *alarm*
+  12-09 16:42:31.925 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:42:32.107 - 1000 - REL ActivityManager-Sleep
+  12-09 16:42:38.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:42:38.349 - 10086 - ACQ show keyguard (partial)
+  12-09 16:42:38.354 - 1000 - REL *alarm*
+  12-09 16:42:38.403 - 10086 - REL show keyguard
+  12-09 16:44:12.969 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:44:12.985 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:44:13.008 - 1000 - ACQ *alarm* (partial)
+  12-09 16:44:13.021 - 1000 - REL *alarm*
+  12-09 16:44:13.875 - 1041 - ACQ AudioMix (partial)
+  12-09 16:44:13.877 - 1041 - REL AudioMix
+  12-09 16:44:13.877 - 1041 - ACQ AudioMix (partial)
+  12-09 16:44:13.954 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:44:14.157 - 1041 - REL AudioMix
+  12-09 16:44:14.158 - 1041 - ACQ AudioMix (partial)
+  12-09 16:44:17.288 - 1041 - REL AudioMix
+  12-09 16:45:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:45:00.002 - 1000 - REL *alarm*
+  12-09 16:46:00.001 - 1000 - ACQ *alarm* (partial)
+  12-09 16:46:00.003 - 1000 - REL *alarm*
+  12-09 16:46:13.980 - 1000 - REL WindowManager
+  12-09 16:47:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 16:47:00.005 - 1000 - REL *alarm*
+  12-09 16:47:14.189 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:47:14.462 - 1000 - REL ActivityManager-Sleep
+  12-09 16:47:20.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:47:20.352 - 10086 - ACQ show keyguard (partial)
+  12-09 16:47:20.360 - 1000 - REL *alarm*
+  12-09 16:47:20.409 - 10086 - REL show keyguard
+  12-09 16:50:46.999 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:50:47.012 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:50:47.073 - 1000 - ACQ *alarm* (partial)
+  12-09 16:50:47.080 - 1000 - REL *alarm*
+  12-09 16:50:49.406 - 1041 - ACQ AudioMix (partial)
+  12-09 16:50:49.407 - 1041 - REL AudioMix
+  12-09 16:50:49.407 - 1041 - ACQ AudioMix (partial)
+  12-09 16:50:49.510 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:50:49.700 - 1041 - REL AudioMix
+  12-09 16:50:49.701 - 1041 - ACQ AudioMix (partial)
+  12-09 16:50:52.817 - 1041 - REL AudioMix
+  12-09 16:51:00.008 - 1000 - ACQ *alarm* (partial)
+  12-09 16:51:00.009 - 1000 - REL *alarm*
+  12-09 16:52:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:52:00.002 - 1000 - REL *alarm*
+  12-09 16:52:49.506 - 1000 - REL WindowManager
+  12-09 16:53:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:53:00.003 - 1000 - REL *alarm*
+  12-09 16:53:49.726 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 16:53:49.942 - 1000 - REL ActivityManager-Sleep
+  12-09 16:53:56.347 - 1000 - ACQ *alarm* (partial)
+  12-09 16:53:56.349 - 10086 - ACQ show keyguard (partial)
+  12-09 16:53:56.354 - 1000 - REL *alarm*
+  12-09 16:53:56.401 - 10086 - REL show keyguard
+  12-09 16:58:07.203 - 1000 - ACQ *alarm* (partial)
+  12-09 16:58:07.214 - 1000 - ACQ NetworkStats (partial)
+  12-09 16:58:07.353 - 1000 - REL NetworkStats
+  12-09 16:58:07.358 - 1000 - REL *alarm*
+  12-09 16:58:27.556 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 16:58:27.620 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 16:58:28.744 - 1041 - ACQ AudioMix (partial)
+  12-09 16:58:28.744 - 1041 - REL AudioMix
+  12-09 16:58:28.744 - 1041 - ACQ AudioMix (partial)
+  12-09 16:58:28.793 - 1000 - ACQ WindowManager (screen-bright,on-after-release)
+  12-09 16:58:29.009 - 1041 - REL AudioMix
+  12-09 16:58:29.010 - 1041 - ACQ AudioMix (partial)
+  12-09 16:58:32.129 - 1041 - REL AudioMix
+  12-09 16:59:00.002 - 1000 - ACQ *alarm* (partial)
+  12-09 16:59:00.003 - 1000 - REL *alarm*
+  12-09 17:00:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 17:00:00.005 - 1000 - REL *alarm*
+  12-09 17:00:28.805 - 1000 - REL WindowManager
+  12-09 17:01:00.004 - 1000 - ACQ *alarm* (partial)
+  12-09 17:01:00.006 - 1000 - REL *alarm*
+  12-09 17:01:00.012 - 1000 - ACQ *alarm* (partial)
+  12-09 17:01:00.013 - 1000 - REL *alarm*
+  12-09 17:01:29.078 - 1000 - ACQ ActivityManager-Sleep (partial)
+  12-09 17:01:29.480 - 1000 - REL ActivityManager-Sleep
+  12-09 17:01:35.219 - 1000 - ACQ *alarm* (partial)
+  12-09 17:01:35.233 - 10086 - ACQ show keyguard (partial)
+  12-09 17:01:35.253 - 1000 - REL *alarm*
+  12-09 17:01:35.311 - 10086 - REL show keyguard
+  12-09 17:02:14.559 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 17:02:14.577 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 17:02:14.711 - 1000 - ACQ *alarm* (partial)
+  12-09 17:02:14.716 - 1000 - REL *alarm*
+  12-09 17:02:16.972 - 1000 - ACQ PhoneWindowManager.mPowerKeyWakeLock (partial)
+  12-09 17:02:17.158 - 1000 - REL PhoneWindowManager.mPowerKeyWakeLock
+  12-09 17:03:12.389 - 1000 - ACQ *alarm* (partial)
+  12-09 17:03:12.422 - 1000 - ACQ *vibrator* (partial)
+  12-09 17:03:12.425 - 1000 - REL *vibrator*
+  12-09 17:03:12.440 - 1000 - REL *alarm*
+  12-09 17:03:12.687 - 1041 - ACQ AudioMix (partial)
+  12-09 17:03:12.688 - 1041 - ACQ AudioMix (partial)
+  12-09 17:03:12.729 - 1041 - REL AudioMix
+  12-09 17:03:12.729 - 1041 - ACQ AudioMix (partial)
+  12-09 17:03:12.966 - 10086 - ACQ RingtonePlayer (partial)
+  12-09 17:03:13.586 - 10086 - REL RingtonePlayer
+  12-09 17:03:15.669 - 1041 - REL AudioMix
+  12-09 17:03:15.896 - 1041 - REL AudioMix
+  12-09 17:03:15.896 - 1041 - ACQ AudioMix (partial)
+  12-09 17:03:19.020 - 1041 - REL AudioMix
+  12-09 17:03:50.825 - 1041 - ACQ AudioMix (partial)
+  12-09 17:03:52.188 - 1000 - ACQ *job*/c.a.p.m.m/c.a.p.m.MediaService (partial)
+  12-09 17:03:52.189 - 1000 - ACQ *job*/c.a.p.m.m/c.a.p.m.MediaService (partial)
+  12-09 17:03:52.196 - 1000 - REL *job*/c.a.p.m.m/c.a.p.m.MediaService
+  12-09 17:03:52.232 - 1000 - REL *job*/c.a.p.m.m/c.a.p.m.MediaService
+  12-09 17:03:53.832 - 1041 - REL AudioMix
+  -
+  Events: 748, Time-Resets: 188
+  Buffer, Bytes used: 3562
+FaceDownDetector:
+  mFaceDown=false
+  mActive=false
+  mLastFlipTime=0
+  mSensorMaxLatencyMicros=2000000
+  mUserInteractionBackoffMillis=60000
+  mPreviousResultTime=0
+  mPreviousResultType=1
+  mMillisSaved=0
+  mZAccelerationThreshold=-9.5
+  mAccelerationThreshold=0.2
+  mTimeThreshold=PT1S
+AmbientDisplaySuppressionController:
+ ambientDisplaySuppressed=false
+ mSuppressionTokens={}
+
+Low Power Standby Controller:
+  mIsActive=false
+  mIsEnabled=false
+  mSupportedConfig=false
+  mEnabledByDefaultConfig=false
+  mStandbyTimeoutConfig=0
+  mAllowlistUids=[]

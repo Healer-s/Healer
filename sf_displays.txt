@@ -1,0 +1,10 @@
+Display 0 (internal, primary, "Primary display")
+   deviceProductInfo={}
+   powerMode=Off
+   activeModeId=0
+   displayModes=
+      {id=0, hwcId=0, resolution=480x800, refreshRate=58.00 Hz, dpi=113.94x118.14, group=-1}
+   displayManagerPolicy={defaultModeId=0, allowGroupSwitching=false, primaryRange=[0.00 Hz, 61.00 Hz], appRequestRange=[0.00 Hz, 61.00 Hz]}
+   supportsFrameRateOverrideByContent=false
+   idleTimer=off (platform)
+

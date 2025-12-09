@@ -1,0 +1,1441 @@
+
+== Service global info: ==
+
+Number of camera devices: 1
+Number of normal camera devices: 1
+Number of public camera devices visible to API1: 1
+    Device 0 maps to "0"
+Active Camera Clients:
+[]
+Allowed user IDs: 0
+
+== Camera service events log (most recent at top): ==
+  12-09 17:01:35 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:58:28 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:53:50 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:50:49 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:47:14 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:44:14 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:42:32 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:39:31 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:34:12 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:31:12 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:29:59 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:26:58 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:24:53 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:21:53 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:21:09 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:18:09 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:15:50 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:12:49 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:11:03 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:08:02 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:08:00 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:05:37 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:05:28 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:02:28 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 16:01:03 : DISCONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 15:58:02 : CONNECT device 0 client for package com.mediatek.camera (PID 3784)
+  12-09 06:02:26 : USER_SWITCH previous allowed user IDs: <None>, current allowed user IDs: 0
+  12-09 06:01:54 : ADD device 0, reason: (Device added)
+
+== Camera device 0 dynamic info: ==
+  Device 0 is closed, no client instance
+== Camera Provider HAL external/0-0 (v2.5, remote) static info: 0 devices: ==
+== Camera Provider HAL internal/0-1 (v2.6, remote) static info: 1 devices: ==
+== Camera HAL device device@3.6/internal/0 (v3.6) static information: ==
+  Resource cost: 100
+  Conflicting devices: None
+  API1 info:
+    Has a flash unit: false
+    Facing: Front
+    Orientation: 90
+  API2 camera characteristics:
+    Dumping camera metadata array: 119 / 119 entries, 7256 / 7256 bytes of extra data.
+      Version: 1, Flags: 00000000
+      android.colorCorrection.availableAberrationModes (00004): byte[1]
+        [0 ]
+      android.control.aeAvailableAntibandingModes (10012): byte[4]
+        [0 1 2 3 ]
+      android.control.aeAvailableModes (10013): byte[4]
+        [0 1 2 3 ]
+      android.control.aeAvailableTargetFpsRanges (10014): int32[10]
+        [15 15 15 20 ]
+        [20 20 5 30 ]
+        [30 30 ]
+      android.control.aeCompensationRange (10015): int32[2]
+        [-4 4 ]
+      android.control.aeCompensationStep (10016): rational[1]
+        [(1 / 2) ]
+      android.control.afAvailableModes (10017): byte[1]
+        [0 ]
+      android.control.availableEffects (10018): byte[7]
+        [0 1 2 4 6 7 8 ]
+      android.control.availableSceneModes (10019): byte[17]
+        [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 ]
+        [18 ]
+      android.control.availableVideoStabilizationModes (1001a): byte[2]
+        [0 1 ]
+      android.control.awbAvailableModes (1001b): byte[9]
+        [0 1 2 3 4 5 6 7 8 ]
+      android.control.maxRegions (1001c): int32[3]
+        [1 1 0 ]
+      android.control.sceneModeOverrides (1001d): byte[51]
+        [0 1 0 1 1 0 1 1 0 1 5 0 1 1 0 1 ]
+        [1 0 1 1 0 1 5 0 1 5 0 1 5 0 1 1 ]
+        [0 0 5 0 1 1 0 1 1 0 1 2 0 1 1 0 ]
+        [1 1 0 ]
+      android.control.aeLockAvailable (10024): byte[2]
+        [TRUE FALSE ]
+      android.control.awbLockAvailable (10025): byte[2]
+        [TRUE FALSE ]
+      android.control.availableModes (10026): byte[4]
+        [0 1 2 3 ]
+      android.control.postRawSensitivityBoostRange (10027): int32[2]
+        [100 100 ]
+      android.control.zoomRatioRange (1002e): float[2]
+        [1.00000000 16.00000000 ]
+      android.edge.availableEdgeModes (30002): byte[3]
+        [0 1 2 ]
+      android.flash.info.available (50000): byte[1]
+        [FALSE ]
+      android.flash.info.chargeDuration (50001): int64[1]
+        [0 ]
+      android.hotPixel.availableHotPixelModes (60001): byte[2]
+        [1 2 ]
+      android.jpeg.availableThumbnailSizes (70007): int32[12]
+        [0 0 144 80 ]
+        [160 96 192 108 ]
+        [176 128 192 144 ]
+      android.jpeg.maxSize (70008): int32[1]
+        [11985408 ]
+      android.lens.facing (80005): byte[1]
+        [FRONT ]
+      android.lens.poseRotation (80006): float[4]
+        [0.70710701 0.70710701 0.00000000 0.00000000 ]
+      android.lens.poseTranslation (80007): float[3]
+        [0.00000000 0.00000000 0.00000000 ]
+      android.lens.intrinsicCalibration (8000a): float[5]
+        [4.46428585 1.36612022 1632.00000000 1224.00000000 0.00000000 ]
+      android.lens.poseReference (8000c): byte[1]
+        [PRIMARY_CAMERA ]
+      android.lens.distortion (8000d): float[5]
+        [0.00000000 0.00000000 0.00000000 0.00000000 0.00000000 ]
+      android.lens.info.availableApertures (90000): float[1]
+        [2.40000010 ]
+      android.lens.info.availableFilterDensities (90001): float[1]
+        [0.00000000 ]
+      android.lens.info.availableFocalLengths (90002): float[1]
+        [5.00000000 ]
+      android.lens.info.availableOpticalStabilization (90003): byte[1]
+        [0 ]
+      android.lens.info.hyperfocalDistance (90004): float[1]
+        [0.00000000 ]
+      android.lens.info.minimumFocusDistance (90005): float[1]
+        [0.00000000 ]
+      android.lens.info.shadingMapSize (90006): int32[2]
+        [17 17 ]
+      android.lens.info.focusDistanceCalibration (90007): byte[1]
+        [UNCALIBRATED ]
+      android.noiseReduction.availableNoiseReductionModes (a0002): byte[3]
+        [0 1 2 ]
+      android.request.maxNumOutputStreams (c0006): int32[3]
+        [1 3 1 ]
+      android.request.maxNumInputStreams (c0008): int32[1]
+        [0 ]
+      android.request.pipelineMaxDepth (c000a): byte[1]
+        [8 ]
+      android.request.partialResultCount (c000b): int32[1]
+        [10 ]
+      android.request.availableCapabilities (c000c): byte[7]
+        [BACKWARD_COMPATIBLE MANUAL_SENSOR MANUAL_POST_PROCESSING READ_SENSOR_SETTINGS RAW BURST_CAPTURE CONSTRAINED_HIGH_SPEED_VIDEO ]
+      android.request.availableRequestKeys (c000d): int32[119]
+        [0 1 2 3 ]
+        [65536 65537 65538 65539 ]
+        [65540 65541 65542 65543 ]
+        [65544 65545 65546 65547 ]
+        [65548 65549 65550 65551 ]
+        [65552 65553 65576 131072 ]
+        [196608 196609 262144 262145 ]
+        [262146 393216 458752 458753 ]
+        [458754 458755 458756 458757 ]
+        [458758 524288 524289 524290 ]
+        [524291 524292 655360 655361 ]
+        [786433 786435 851989 917504 ]
+        [917505 917506 917527 917528 ]
+        [1048576 1048577 1114112 1114113 ]
+        [1114114 1114115 1114128 1245184 ]
+        [1245185 1245186 1245187 1310720 ]
+        [1441792 -2147483648 -2147483646 -2147483644 ]
+        [-2147483639 -2147221504 -2147221501 -2147418112 ]
+        [-2147155967 -2146631680 -2146762751 -2146762747 ]
+        [-2146697215 -2146697214 -2147090429 -2147090427 ]
+        [-2147090420 -2146631680 -2147287040 -2147287029 ]
+        [-2147287039 -2147024896 -2147024893 -2147221501 ]
+        [-2147221504 -2146959360 -2146697214 -2146631680 ]
+        [-2146631678 -2146762741 -2146762740 -2146762738 ]
+        [-2146762737 -2146762736 -2146762735 -2147221497 ]
+        [-2146762721 -2146762727 -2146762726 -2146762725 ]
+        [-2146762731 -2146762734 -2146959354 -2146959352 ]
+        [-2147090429 -2147090427 -2147090420 65577 ]
+        [-2146762742 -2146238463 -2146238461 65576 ]
+        [-2146762723 -2146762722 -2146762720 ]
+      android.request.availableResultKeys (c000e): int32[125]
+        [0 1 2 3 ]
+        [65536 65537 65538 65539 ]
+        [65540 65541 65542 65567 ]
+        [65543 65544 65545 65568 ]
+        [65546 65547 65548 65549 ]
+        [65570 65550 65551 65552 ]
+        [65553 65576 196608 262144 ]
+        [262145 262146 262149 393216 ]
+        [458752 458753 458754 458755 ]
+        [458756 458761 458757 458758 ]
+        [524288 524289 524290 524291 ]
+        [524296 524292 524297 655360 ]
+        [786433 786435 786441 851989 ]
+        [917504 917505 917506 917520 ]
+        [917521 917522 917523 917524 ]
+        [917525 917526 917527 917528 ]
+        [1048576 1114112 1114116 1114117 ]
+        [1114118 1114119 1114120 1114113 ]
+        [1114121 1114114 1114122 1114123 ]
+        [1114126 1114115 1114127 1114128 ]
+        [1245184 1245185 1245186 1245187 ]
+        [1310720 1441792 1507328 -2147483648 ]
+        [-2147483647 -2147483646 -2147483645 -2147483644 ]
+        [-2147483643 -2147418112 -2147090432 -2147090431 ]
+        [-2147090430 -2146762750 -2147090428 -2147090426 ]
+        [-2147090421 -2146762750 -2147287038 -2147287031 ]
+        [-2147221500 -2147221503 -2146959360 -2146697214 ]
+        [-2146762739 -2147221498 -2146762731 -2146762730 ]
+        [-2146762729 -2147483637 -2147090428 -2147090426 ]
+        [-2147090421 65577 -2146762742 -2146238463 ]
+        [-2146238461 65576 -2146762723 -2146762722 ]
+        [-2146762720 ]
+      android.request.availableCharacteristicsKeys (c000f): int32[111]
+        [4 65554 65555 65556 ]
+        [65557 65558 65559 65560 ]
+        [65561 65562 65572 65573 ]
+        [65574 65575 65563 65564 ]
+        [65565 196610 327680 327681 ]
+        [393217 458759 458760 589824 ]
+        [589825 589826 589827 589828 ]
+        [589829 589830 589831 655362 ]
+        [786438 786440 786442 786443 ]
+        [786447 786444 786445 786446 ]
+        [786447 851972 851978 851979 ]
+        [851980 851981 983040 983050 ]
+        [983041 983042 983043 983044 ]
+        [983045 983046 983047 983048 ]
+        [917507 917508 917509 917510 ]
+        [917511 917512 917513 917514 ]
+        [917515 917516 917517 917518 ]
+        [917519 917518 917529 524293 ]
+        [1179648 1179650 1179650 1179649 ]
+        [1179651 1179652 1179653 1179654 ]
+        [1179655 1245188 1245189 1310721 ]
+        [1376256 1507329 1048578 -2147483642 ]
+        [-2147483641 -2147483640 -2147483638 -2147418111 ]
+        [-2147155968 -2146762752 -2146762748 -2146697216 ]
+        [-2147287037 -2147287036 -2147287034 -2147287032 ]
+        [-2146959359 -2146762733 -2146762732 -2146959353 ]
+        [-2146828286 -2146762744 -2146762743 -2146238464 ]
+        [-2146238462 -2146238460 65575 ]
+      android.request.availableSessionKeys (c0010): int32[17]
+        [-2146631680 -2146762747 -2146697214 -2146631680 ]
+        [-2146631678 -2146762734 65553 -2147024896 ]
+        [-2147024893 -2147287040 -2146959354 -2146959352 ]
+        [-2146762742 -2146238463 -2146238461 -2146762723 ]
+        [-2146762720 ]
+      android.scaler.availableJpegSizes (d0003): int32[12]
+        [640 480 800 600 ]
+        [1600 1200 2560 1920 ]
+        [3264 2448 3264 2448 ]
+      android.scaler.availableMaxDigitalZoom (d0004): float[1]
+        [16.00000000 ]
+      android.scaler.availableStreamConfigurations (d000a): int32[232]
+        [33 3264 2448 OUTPUT ]
+        [33 3264 2448 OUTPUT ]
+        [33 2560 1920 OUTPUT ]
+        [33 1920 1088 OUTPUT ]
+        [33 1280 720 OUTPUT ]
+        [33 640 480 OUTPUT ]
+        [33 320 240 OUTPUT ]
+        [35 3264 2448 OUTPUT ]
+        [35 2560 1920 OUTPUT ]
+        [35 1920 1088 OUTPUT ]
+        [35 1920 1080 OUTPUT ]
+        [35 1280 720 OUTPUT ]
+        [35 720 480 OUTPUT ]
+        [35 640 480 OUTPUT ]
+        [35 352 288 OUTPUT ]
+        [35 320 240 OUTPUT ]
+        [35 192 144 OUTPUT ]
+        [35 192 108 OUTPUT ]
+        [35 176 144 OUTPUT ]
+        [35 176 128 OUTPUT ]
+        [34 3264 2448 OUTPUT ]
+        [34 1920 1088 OUTPUT ]
+        [34 1920 1080 OUTPUT ]
+        [34 1280 720 OUTPUT ]
+        [34 720 480 OUTPUT ]
+        [34 640 480 OUTPUT ]
+        [34 352 288 OUTPUT ]
+        [34 320 240 OUTPUT ]
+        [34 192 144 OUTPUT ]
+        [34 192 108 OUTPUT ]
+        [34 176 144 OUTPUT ]
+        [34 176 128 OUTPUT ]
+        [34 3264 2448 OUTPUT ]
+        [34 2560 1920 OUTPUT ]
+        [34 1920 1088 OUTPUT ]
+        [34 1920 1080 OUTPUT ]
+        [34 1280 720 OUTPUT ]
+        [34 720 480 OUTPUT ]
+        [34 640 480 OUTPUT ]
+        [34 352 288 OUTPUT ]
+        [34 320 240 OUTPUT ]
+        [34 192 144 OUTPUT ]
+        [34 192 108 OUTPUT ]
+        [34 176 144 OUTPUT ]
+        [34 176 128 OUTPUT ]
+        [842094169 3264 2448 OUTPUT ]
+        [842094169 2560 1920 OUTPUT ]
+        [842094169 1920 1088 OUTPUT ]
+        [842094169 1920 1080 OUTPUT ]
+        [842094169 1280 720 OUTPUT ]
+        [842094169 720 480 OUTPUT ]
+        [842094169 640 480 OUTPUT ]
+        [842094169 352 288 OUTPUT ]
+        [842094169 320 240 OUTPUT ]
+        [842094169 192 144 OUTPUT ]
+        [842094169 192 108 OUTPUT ]
+        [842094169 176 144 OUTPUT ]
+        [842094169 176 128 OUTPUT ]
+      android.scaler.availableMinFrameDurations (d000b): int64[232]
+        [33 3264 ]
+        [2448 33333333 ]
+        [33 3264 ]
+        [2448 33333333 ]
+        [33 2560 ]
+        [1920 33333333 ]
+        [33 1920 ]
+        [1088 33333333 ]
+        [33 1280 ]
+        [720 33333333 ]
+        [33 640 ]
+        [480 33333333 ]
+        [33 320 ]
+        [240 33333333 ]
+        [35 3264 ]
+        [2448 41666666 ]
+        [35 2560 ]
+        [1920 41666666 ]
+        [35 1920 ]
+        [1088 33333333 ]
+        [35 1920 ]
+        [1080 33333333 ]
+        [35 1280 ]
+        [720 33333333 ]
+        [35 720 ]
+        [480 33333333 ]
+        [35 640 ]
+        [480 33333333 ]
+        [35 352 ]
+        [288 33333333 ]
+        [35 320 ]
+        [240 33333333 ]
+        [35 192 ]
+        [144 33333333 ]
+        [35 192 ]
+        [108 33333333 ]
+        [35 176 ]
+        [144 33333333 ]
+        [35 176 ]
+        [128 33333333 ]
+        [34 3264 ]
+        [2448 33333333 ]
+        [34 1920 ]
+        [1088 33333333 ]
+        [34 1920 ]
+        [1080 33333333 ]
+        [34 1280 ]
+        [720 33333333 ]
+        [34 720 ]
+        [480 33333333 ]
+        [34 640 ]
+        [480 33333333 ]
+        [34 352 ]
+        [288 33333333 ]
+        [34 320 ]
+        [240 33333333 ]
+        [34 192 ]
+        [144 33333333 ]
+        [34 192 ]
+        [108 33333333 ]
+        [34 176 ]
+        [144 33333333 ]
+        [34 176 ]
+        [128 33333333 ]
+        [34 3264 ]
+        [2448 41666666 ]
+        [34 2560 ]
+        [1920 41666666 ]
+        [34 1920 ]
+        [1088 33333333 ]
+        [34 1920 ]
+        [1080 33333333 ]
+        [34 1280 ]
+        [720 33333333 ]
+        [34 720 ]
+        [480 33333333 ]
+        [34 640 ]
+        [480 33333333 ]
+        [34 352 ]
+        [288 33333333 ]
+        [34 320 ]
+        [240 33333333 ]
+        [34 192 ]
+        [144 33333333 ]
+        [34 192 ]
+        [108 33333333 ]
+        [34 176 ]
+        [144 33333333 ]
+        [34 176 ]
+        [128 33333333 ]
+        [842094169 3264 ]
+        [2448 41666666 ]
+        [842094169 2560 ]
+        [1920 41666666 ]
+        [842094169 1920 ]
+        [1088 33333333 ]
+        [842094169 1920 ]
+        [1080 33333333 ]
+        [842094169 1280 ]
+        [720 33333333 ]
+        [842094169 720 ]
+        [480 33333333 ]
+        [842094169 640 ]
+        [480 33333333 ]
+        [842094169 352 ]
+        [288 33333333 ]
+        [842094169 320 ]
+        [240 33333333 ]
+        [842094169 192 ]
+        [144 33333333 ]
+        [842094169 192 ]
+        [108 33333333 ]
+        [842094169 176 ]
+        [144 33333333 ]
+        [842094169 176 ]
+        [128 33333333 ]
+      android.scaler.availableStallDurations (d000c): int64[224]
+        [33 3264 ]
+        [2448 33333333 ]
+        [33 2560 ]
+        [1920 33333333 ]
+        [33 1920 ]
+        [1088 33333333 ]
+        [33 1280 ]
+        [720 33333333 ]
+        [33 640 ]
+        [480 33333333 ]
+        [33 320 ]
+        [240 33333333 ]
+        [35 3264 ]
+        [2448 0 ]
+        [35 2560 ]
+        [1920 0 ]
+        [35 1920 ]
+        [1088 0 ]
+        [35 1920 ]
+        [1080 0 ]
+        [35 1280 ]
+        [720 0 ]
+        [35 720 ]
+        [480 0 ]
+        [35 640 ]
+        [480 0 ]
+        [35 352 ]
+        [288 0 ]
+        [35 320 ]
+        [240 0 ]
+        [35 192 ]
+        [144 0 ]
+        [35 192 ]
+        [108 0 ]
+        [35 176 ]
+        [144 0 ]
+        [35 176 ]
+        [128 0 ]
+        [34 1920 ]
+        [1088 0 ]
+        [34 1920 ]
+        [1080 0 ]
+        [34 1280 ]
+        [720 0 ]
+        [34 720 ]
+        [480 0 ]
+        [34 640 ]
+        [480 0 ]
+        [34 352 ]
+        [288 0 ]
+        [34 320 ]
+        [240 0 ]
+        [34 192 ]
+        [144 0 ]
+        [34 192 ]
+        [108 0 ]
+        [34 176 ]
+        [144 0 ]
+        [34 176 ]
+        [128 0 ]
+        [34 3264 ]
+        [2448 0 ]
+        [34 2560 ]
+        [1920 0 ]
+        [34 1920 ]
+        [1088 0 ]
+        [34 1920 ]
+        [1080 0 ]
+        [34 1280 ]
+        [720 0 ]
+        [34 720 ]
+        [480 0 ]
+        [34 640 ]
+        [480 0 ]
+        [34 352 ]
+        [288 0 ]
+        [34 320 ]
+        [240 0 ]
+        [34 192 ]
+        [144 0 ]
+        [34 192 ]
+        [108 0 ]
+        [34 176 ]
+        [144 0 ]
+        [34 176 ]
+        [128 0 ]
+        [842094169 3264 ]
+        [2448 0 ]
+        [842094169 2560 ]
+        [1920 0 ]
+        [842094169 1920 ]
+        [1088 0 ]
+        [842094169 1920 ]
+        [1080 0 ]
+        [842094169 1280 ]
+        [720 0 ]
+        [842094169 720 ]
+        [480 0 ]
+        [842094169 640 ]
+        [480 0 ]
+        [842094169 352 ]
+        [288 0 ]
+        [842094169 320 ]
+        [240 0 ]
+        [842094169 192 ]
+        [144 0 ]
+        [842094169 192 ]
+        [108 0 ]
+        [842094169 176 ]
+        [144 0 ]
+        [842094169 176 ]
+        [128 0 ]
+      android.scaler.croppingType (d000d): byte[1]
+        [CENTER_ONLY ]
+      android.sensor.referenceIlluminant1 (e0003): byte[1]
+        [D65 ]
+      android.sensor.referenceIlluminant2 (e0004): byte[1]
+        [17 ]
+      android.sensor.calibrationTransform1 (e0005): rational[9]
+        [(65536 / 65536) (0 / 65536) ]
+        [(0 / 65536) (0 / 65536) ]
+        [(65536 / 65536) (0 / 65536) ]
+        [(0 / 65536) (0 / 65536) ]
+        [(65536 / 65536) ]
+      android.sensor.calibrationTransform2 (e0006): rational[9]
+        [(65536 / 65536) (0 / 65536) ]
+        [(0 / 65536) (0 / 65536) ]
+        [(65536 / 65536) (0 / 65536) ]
+        [(0 / 65536) (0 / 65536) ]
+        [(65536 / 65536) ]
+      android.sensor.colorTransform1 (e0007): rational[9]
+        [(63836 / 65536) (17637 / 65536) ]
+        [(-11733 / 65536) (-42556 / 65536) ]
+        [(94896 / 65536) (10184 / 65536) ]
+        [(-29671 / 65536) (50793 / 65536) ]
+        [(39440 / 65536) ]
+      android.sensor.colorTransform2 (e0008): rational[9]
+        [(79931 / 65536) (10387 / 65536) ]
+        [(-19125 / 65536) (-52508 / 65536) ]
+        [(116095 / 65536) (-598 / 65536) ]
+        [(-48225 / 65536) (90104 / 65536) ]
+        [(19532 / 65536) ]
+      android.sensor.forwardMatrix1 (e0009): rational[9]
+        [(65213 / 65536) (-21522 / 65536) ]
+        [(19500 / 65536) (27937 / 65536) ]
+        [(41983 / 65536) (-4385 / 65536) ]
+        [(9320 / 65536) (-53813 / 65536) ]
+        [(98574 / 65536) ]
+      android.sensor.forwardMatrix2 (e000a): rational[9]
+        [(57603 / 65536) (-38610 / 65536) ]
+        [(44197 / 65536) (26215 / 65536) ]
+        [(16882 / 65536) (22437 / 65536) ]
+        [(15441 / 65536) (-137641 / 65536) ]
+        [(176281 / 65536) ]
+      android.sensor.baseGainFactor (e000b): rational[1]
+        [(42 / 256) ]
+      android.sensor.blackLevelPattern (e000c): int32[4]
+        [64 64 64 64 ]
+      android.sensor.maxAnalogSensitivity (e000d): int32[1]
+        [1600 ]
+      android.sensor.orientation (e000e): int32[1]
+        [90 ]
+      android.sensor.profileHueSatMapDimensions (e000f): int32[3]
+        [1 2 1 ]
+      android.sensor.availableTestPatternModes (e0019): int32[1]
+        [0 ]
+      android.sensor.info.activeArraySize (f0000): int32[4]
+        [0 0 3264 2448 ]
+      android.sensor.info.sensitivityRange (f0001): int32[2]
+        [100 16000 ]
+      android.sensor.info.colorFilterArrangement (f0002): byte[1]
+        [BGGR ]
+      android.sensor.info.exposureTimeRange (f0003): int64[2]
+        [100000 142857142 ]
+      android.sensor.info.maxFrameDuration (f0004): int64[1]
+        [142857142 ]
+      android.sensor.info.physicalSize (f0005): float[2]
+        [3.66000009 8.96000004 ]
+      android.sensor.info.pixelArraySize (f0006): int32[2]
+        [3264 2448 ]
+      android.sensor.info.whiteLevel (f0007): int32[1]
+        [1023 ]
+      android.sensor.info.timestampSource (f0008): byte[1]
+        [UNKNOWN ]
+      android.sensor.info.preCorrectionActiveArraySize (f000a): int32[4]
+        [0 0 3264 2448 ]
+      android.shading.availableModes (100002): byte[3]
+        [0 1 2 ]
+      android.statistics.info.availableFaceDetectModes (120000): byte[2]
+        [0 1 ]
+      android.statistics.info.histogramBucketCount (120001): int32[1]
+        [64 ]
+      android.statistics.info.maxFaceCount (120002): int32[1]
+        [15 ]
+      android.statistics.info.maxHistogramCount (120003): int32[1]
+        [1000 ]
+      android.statistics.info.maxSharpnessMapValue (120004): int32[1]
+        [1000 ]
+      android.statistics.info.sharpnessMapSize (120005): int32[2]
+        [64 64 ]
+      android.statistics.info.availableHotPixelMapModes (120006): byte[1]
+        [0 ]
+      android.statistics.info.availableLensShadingMapModes (120007): byte[2]
+        [0 1 ]
+      android.tonemap.maxCurvePoints (130004): int32[1]
+        [101 ]
+      android.tonemap.availableToneMapModes (130005): byte[3]
+        [0 1 2 ]
+      android.info.supportedHardwareLevel (150000): byte[1]
+        [FULL ]
+      android.sync.maxLatency (170001): int32[1]
+        [PER_FRAME_CONTROL ]
+      com.mediatek.facefeature.availablegesturemodes (80000006): int32[2]
+        [0 1 ]
+      com.mediatek.facefeature.availablesmiledetectmodes (80000007): int32[2]
+        [0 1 ]
+      com.mediatek.facefeature.availableasdmodes (80000008): int32[2]
+        [0 1 ]
+      com.mediatek.facefeature.availableforceface3a (8000000a): int32[2]
+        [0 1 ]
+      com.mediatek.nrfeature.available3dnrmodes (80010001): int32[2]
+        [0 1 ]
+      com.mediatek.hdrfeature.availableHdrModesPhoto (80030003): int32[2]
+        [0 1 ]
+      com.mediatek.hdrfeature.availableHdrModesVideo (80030004): int32[1]
+        [0 ]
+      com.mediatek.hdrfeature.availableVhdrModes (80030005): int32[1]
+        [0 ]
+      com.mediatek.hdrfeature.availableMStreamHdrModes (80030006): int32[1]
+        [0 ]
+      com.mediatek.hdrfeature.availableStaggerHdrModes (80030008): int32[1]
+        [0 ]
+      com.mediatek.mfnrfeature.availablemfbmodes (80040002): int32[1]
+        [0 ]
+      com.mediatek.mfnrfeature.availableaismodes (80040005): int32[1]
+        [0 ]
+      com.mediatek.cshotfeature.availableCShotModes (80050000): int32[2]
+        [0 1 ]
+      com.mediatek.streamingfeature.availableRecordStates (80080001): int32[2]
+        [0 1 ]
+      com.mediatek.streamingfeature.cropOuterLinesEnable (80080007): byte[1]
+        [0 ]
+      com.mediatek.multicamfeature.availableMultiCamFeatureSensorManualUpdated (800a0002): int64[10]
+        [983040 983050 ]
+        [983046 983042 ]
+        [983051 983058 ]
+        [917518 524293 ]
+        [65559 65564 ]
+      com.mediatek.control.capture.early.notification.support (800b0000): int32[2]
+        [0 1 ]
+      com.mediatek.control.capture.availablepostviewmodes (800b0004): int32[2]
+        [0 1 ]
+      com.mediatek.control.capture.available.zsl.modes (800b0008): byte[2]
+        [0 1 ]
+      com.mediatek.control.capture.default.zsl.mode (800b0009): byte[1]
+        [0 ]
+      com.mediatek.control.capture.ispMetaSizeForRaw (800b0013): int32[2]
+        [2560 1920 ]
+      com.mediatek.control.capture.ispMetaSizeForYuv (800b0014): int32[2]
+        [1440 1080 ]
+      com.mediatek.bgservicefeature.availableprereleasemodes (800c0000): int32[1]
+        [0 ]
+      com.mediatek.flashfeature.calibration.available (800e0000): int32[1]
+        [1 ]
+      com.mediatek.aovservicefeature.availableAovModes (80130000): int32[2]
+        [0 1 ]
+      com.mediatek.aovservicefeature.availablePipelineConfig (80130002): int32[2]
+        [0 1 ]
+      com.mediatek.aovservicefeature.availableAovImageSize (80130004): int32[4]
+        [640 480 320 240 ]
+      android.scaler.availableRotateAndCropModes (d0010): byte[1]
+        [0 ]
+== Camera HAL device device@3.6/internal/0 (v3.6) dumpState: ==
+## Camera device [0]
+## Camera device [device@3.6/internal/0]
+
+== state transition (most recent at bottom): Camera device ==
+  12-09 16:50:49.565 : -> open - OK
+  12-09 16:50:49.691 : -> constructDefaultRequestSettings (type:0x1) +
+  12-09 16:50:49.691 : -> constructDefaultRequestSettings (type:0x1) -
+  12-09 16:50:49.716 : -> configure (operationMode:0) +
+  12-09 16:50:50.053 : -> configure (operationMode:0) - OK
+  12-09 16:50:50.070 : -> 1st request - OK
+  12-09 16:53:49.866 : -> flush +
+  12-09 16:53:49.954 : -> flush - OK
+  12-09 16:53:49.998 : -> flush +
+  12-09 16:53:49.999 : -> flush - OK
+  12-09 16:53:50.005 : -> close +
+  12-09 16:53:50.116 : -> close - OK
+  12-09 16:58:28.852 : -> open +
+  12-09 16:58:28.854 : -> open - OK
+  12-09 16:58:29.099 : -> constructDefaultRequestSettings (type:0x1) +
+  12-09 16:58:29.099 : -> constructDefaultRequestSettings (type:0x1) -
+  12-09 16:58:29.182 : -> configure (operationMode:0) +
+  12-09 16:58:29.358 : -> configure (operationMode:0) - OK
+  12-09 16:58:29.374 : -> 1st request - OK
+  12-09 17:01:29.248 : -> flush +
+  12-09 17:01:29.507 : -> flush - OK
+  12-09 17:01:29.539 : -> flush +
+  12-09 17:01:29.568 : -> flush - OK
+  12-09 17:01:29.569 : -> close +
+  12-09 17:01:35.689 : -> close - OK
+
+== error state (most recent at bottom): App Stream Manager ==
+  [no events yet]
+
+== warning state (most recent at bottom): App Stream Manager ==
+  12-09 15:58:02.929 : W [0-ResultHandler::enqueResult] requestNo:1 existed in mResultQueue[1] - hasLastPartial:0->1
+  12-09 15:58:02.945 : W [0-ResultHandler::enqueResult] requestNo:2 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:02.988 : W [0-ResultHandler::enqueResult] requestNo:3 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.022 : W [0-ResultHandler::enqueResult] requestNo:4 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.087 : W [0-ResultHandler::enqueResult] requestNo:6 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.186 : W [0-ResultHandler::enqueResult] requestNo:8 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.232 : W [0-ResultHandler::enqueResult] requestNo:9 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.287 : W [0-ResultHandler::enqueResult] requestNo:10 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.334 : W [0-ResultHandler::enqueResult] requestNo:11 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.609 : W [0-ResultHandler::enqueResult] requestNo:19 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:03.883 : W [0-ResultHandler::enqueResult] requestNo:27 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:04.018 : W [0-ResultHandler::enqueResult] requestNo:31 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:04.187 : W [0-ResultHandler::enqueResult] requestNo:36 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:05.091 : W [0-ResultHandler::enqueResult] requestNo:62 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 15:58:05.527 : W [0-ResultHandler::enqueResult] requestNo:75 existed in mResultQueue[0] - hasLastPartial:0->1
+  ...
+  ...
+  12-09 17:01:29.472 : W [0-ResultHandler::enqueResult] requestNo:4490 existed in mResultQueue[0] - hasLastPartial:0->0
+  12-09 17:01:29.472 : W [0-ResultHandler::enqueResult] requestNo:4490 existed in mResultQueue[0] - hasLastPartial:0->1
+  12-09 17:01:29.473 : W [0-ResultHandler::enqueResult] requestNo:4491 existed in mResultQueue[1] - hasLastPartial:0->0
+  12-09 17:01:29.473 : W [0-ResultHandler::enqueResult] requestNo:4491 existed in mResultQueue[1] - hasLastPartial:0->0
+  12-09 17:01:29.474 : W [0-ResultHandler::enqueResult] requestNo:4491 existed in mResultQueue[1] - hasLastPartial:0->1
+  12-09 17:01:29.477 : W [0-ResultHandler::enqueResult] requestNo:4492 existed in mResultQueue[2] - hasLastPartial:0->0
+  12-09 17:01:29.478 : W [0-ResultHandler::enqueResult] requestNo:4492 existed in mResultQueue[2] - hasLastPartial:0->0
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4490 streamId:0x100000024 App:Meta:DynamicP1_main1
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4490 streamId:0x100000027 App:Meta:DynamicP2
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4490 streamId:0x100000029 App:Meta:FD
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Image Stream Buffer] Error happens and all users release - requestNo:4490 streamId:0 s0:d0:App:YCrCb_420_SP:0|HW_TEXTURE state:IN-FLIGHT->ERROR
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4491 streamId:0x100000024 App:Meta:DynamicP1_main1
+  12-09 17:01:29.478 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4491 streamId:0x100000027 App:Meta:DynamicP2
+  12-09 17:01:29.479 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4491 streamId:0x100000029 App:Meta:FD
+  12-09 17:01:29.479 : W [0-FrameHandler::operator()] [Image Stream Buffer] Error happens and all users release - requestNo:4491 streamId:0 s0:d0:App:YCrCb_420_SP:0|HW_TEXTURE state:IN-FLIGHT->ERROR
+  12-09 17:01:29.479 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4492 streamId:0x100000024 App:Meta:DynamicP1_main1
+  12-09 17:01:29.479 : W [0-FrameHandler::operator()] [Meta Stream Buffer] Error happens... - requestNo:4492 streamId:0x100000027 App:Meta:DynamicP2
+  12-09 17:01:29.479 : W [0-FrameHandler::operator()] [Image Stream Buffer] Error happens and all users release - requestNo:4492 streamId:0 s0:d0:App:YCrCb_420_SP:0|HW_TEXTURE state:IN-FLIGHT->ERROR
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo:4490 Request Error
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo 4490 is removed before shutter callbacked, there MUST have error frames or meta be sent for the request
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo:4491 Request Error
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo 4491 is removed before shutter callbacked, there MUST have error frames or meta be sent for the request
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo:4492 Request Error
+  12-09 17:01:29.479 : W [0-FrameHandler::updateCallback] requestNo 4492 is removed before shutter callbacked, there MUST have error frames or meta be sent for the request
+  12-09 17:01:35.657 : W [0:DeviceSessionPolicy::destroy] not implement yet.
+
+== debug state (most recent at bottom): App Stream Manager ==
+  12-09 17:01:29.474 : D [updateResult] Logical Meta 0: size = 0
+  12-09 17:01:29.476 : D [updateResult] User 0x1 of requestNo 4492, real time:0, last partial:0
+  12-09 17:01:29.476 : D [updateResult] Logical Meta 0: size = 0
+  12-09 17:01:29.477 : D [updateResult] User 0x15 of requestNo 4492, real time:0, last partial:0
+  12-09 17:01:29.477 : D [0-FrameHandler::updateStreamBuffer] Mark buffer_error. requestNo 4492, streamId 0
+  12-09 17:01:29.478 : D [updateResult] User 0x15 of requestNo 4492, real time:0, last partial:0
+  12-09 17:01:29.478 : D [updateResult] Logical Meta 0: size = 0
+  12-09 17:01:29.479 : D [updateResult] User 0x16 of requestNo 4492, real time:0, last partial:1
+  12-09 17:01:29.479 : D [updateResult] Logical Meta 0: size = 0
+  12-09 17:01:29.482 : D [0-FrameHandler::updateResult] Empty FrameQueue:0xb4000076c178e2b0 0xb4000076c178e210
+  12-09 17:01:35.657 : D [0:DeviceSessionPolicy::~DeviceSessionPolicy] destructor of devicesessionpolicy
+  12-09 17:01:35.657 : [destroy] join +
+  12-09 17:01:35.657 : D [0-ResultHandler::requestExit] + 0-ResultHandler
+  12-09 17:01:35.660 : D [0-ResultHandler::requestExit] - 0-ResultHandler
+  12-09 17:01:35.671 : [destroy] join -
+  12-09 17:01:35.671 : [destroy] 0:AppMgr-ResCbHelper->join +
+  12-09 17:01:35.671 : D [0:AppMgr-ResCbHelper::requestExit] + 0:AppMgr-ResCbHelper
+  12-09 17:01:35.671 : D [0:AppMgr-ResCbHelper::threadLoop] Queue1 is empty
+  12-09 17:01:35.672 : D [0:AppMgr-ResCbHelper::requestExit] - 0:AppMgr-ResCbHelper
+  12-09 17:01:35.672 : [destroy] 0:AppMgr-ResCbHelper->join -
+  12-09 17:01:35.672 : [destroy] 0:AppMgr-MsgCbHelper->join +
+  12-09 17:01:35.672 : D [0:AppMgr-MsgCbHelper::requestExit] + 0:AppMgr-MsgCbHelper
+  12-09 17:01:35.672 : D [0:AppMgr-MsgCbHelper::requestExit] - 0:AppMgr-MsgCbHelper
+  12-09 17:01:35.672 : D [0:AppMgr-MsgCbHelper::threadLoop] Queue1 is empty
+  12-09 17:01:35.672 : [destroy] 0:AppMgr-MsgCbHelper->join -
+
+== Vendor tags: ==
+
+  Dumping vendor tag descriptors for vendor with id 11706189966126095484 
+  Dumping configured vendor tag descriptors: 192 entries
+    0x80000000 (gesturemode) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000001 (gestureresult) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000002 (smiledetectmode) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000003 (smiledetectresult) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000004 (asdmode) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000005 (asdresult) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000006 (availablegesturemodes) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000007 (availablesmiledetectmodes) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000008 (availableasdmodes) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80000009 (forceface3a) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x8000000a (availableforceface3a) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x8000000b (additionalresult) with type 1 (int32) defined in section com.mediatek.facefeature
+    0x80010000 (3dnrmode) with type 1 (int32) defined in section com.mediatek.nrfeature
+    0x80010001 (available3dnrmodes) with type 1 (int32) defined in section com.mediatek.nrfeature
+    0x80020000 (doflevel) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020001 (supporteddoflevel) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020002 (resultdoflevel) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020003 (stereowarning) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020004 (depthafon) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020005 (distancemeasureon) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020006 (resultdistance) with type 2 (float) defined in section com.mediatek.stereofeature
+    0x80020007 (touchposition) with type 1 (int32) defined in section com.mediatek.stereofeature
+    0x80020008 (shotmode) with type 0 (byte) defined in section com.mediatek.stereofeature
+    0x80020009 (stereostatus) with type 0 (byte) defined in section com.mediatek.stereofeature
+    0x80030000 (hdrMode) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030001 (SessionParamhdrMode) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030002 (hdrDetectionResult) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030003 (availableHdrModesPhoto) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030004 (availableHdrModesVideo) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030005 (availableVhdrModes) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030006 (availableMStreamHdrModes) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030007 (availableSingleFrameHdr) with type 0 (byte) defined in section com.mediatek.hdrfeature
+    0x80030008 (availableStaggerHdrModes) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80030009 (vhdrResult) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x8003000b (hdrState) with type 1 (int32) defined in section com.mediatek.hdrfeature
+    0x80040000 (mfbmode) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040001 (mfbresult) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040002 (availablemfbmodes) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040003 (aismode) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040004 (aisresult) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040005 (availableaismodes) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040006 (goldenindex) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80040007 (dozipwithbss) with type 1 (int32) defined in section com.mediatek.mfnrfeature
+    0x80050000 (availableCShotModes) with type 1 (int32) defined in section com.mediatek.cshotfeature
+    0x80050001 (capture) with type 1 (int32) defined in section com.mediatek.cshotfeature
+    0x80060000 (aeroi) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060001 (afroi) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060002 (awbroi) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060003 (aeIsoSpeed) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060004 (aeAvailableMetering) with type 0 (byte) defined in section com.mediatek.3afeature
+    0x80060005 (aeMeteringMode) with type 0 (byte) defined in section com.mediatek.3afeature
+    0x80060006 (aeAverageBrightness) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060007 (aeCaptureSelectionShutter) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060008 (aeCaptureSelectionISO) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060009 (aePlineIndex) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000a (aeCustomPlineMode) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000b (awbAvailableRange) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000c (awbValue) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000d (awbCct) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000e (focalLengths35mm) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x8006000f (aeSensorGain) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060010 (aeIspGain) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060011 (aeLuxIndex) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060012 (adrcGain) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060013 (aeMeterFDTarget) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060014 (aeMeterFDLinkTarget) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060015 (aishutExistMotion) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060016 (aishutExposuretime) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060017 (aishutISO) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80060018 (aishutCapture) with type 1 (int32) defined in section com.mediatek.3afeature
+    0x80070000 (eismode) with type 1 (int32) defined in section com.mediatek.eisfeature
+    0x80070001 (isNeedOverrideTimestamp) with type 0 (byte) defined in section com.mediatek.eisfeature
+    0x80070002 (newShutterTimestamp) with type 3 (int64) defined in section com.mediatek.eisfeature
+    0x80070003 (previeweis) with type 1 (int32) defined in section com.mediatek.eisfeature
+    0x80080000 (recordState) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080001 (availableRecordStates) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080002 (hfpsMode) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080003 (availableHfpsModes) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080004 (availableHfpsMaxResolutions) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080005 (availableHfpsEISMaxResolutions) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080006 (hdr10) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080007 (cropOuterLinesEnable) with type 0 (byte) defined in section com.mediatek.streamingfeature
+    0x80080008 (pipDevices) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80080009 (demofb) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x8008000a (demoeis) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x8008000b (demoasd) with type 1 (int32) defined in section com.mediatek.streamingfeature
+    0x80090000 (vsdofCallbackBuffers) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090001 (vsdofDenoiseMode) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090002 (vsdofDenoiseSupportedModule) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090003 (vsdof3rdPartyModule) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090004 (vsdof3rdPartySupportedModule) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090005 (vsdofPreviewEnable) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090006 (vsdofShotMode) with type 0 (byte) defined in section com.mediatek.vsdoffeature
+    0x80090007 (vsdofFeaturePreviewSize) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x80090008 (vsdofFeaturePreviewMode) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x80090009 (availableVsdofFeaturePreviewMode) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x8009000a (vsdofFeatureWarning) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x8009000b (vsdofFeatureCaptureWarningMsg) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x8009000c (vsdofFeatureRecordMode) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x8009000d (vsdofFeatureSupportedDepthMapSizes) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x8009000e (vsdofFeatureRefocusCaptureFlow) with type 1 (int32) defined in section com.mediatek.vsdoffeature
+    0x800a0000 (multiCamFeatureMode) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0001 (availableMultiCamFeatureMode) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0002 (availableMultiCamFeatureSensorManualUpdated) with type 3 (int64) defined in section com.mediatek.multicamfeature
+    0x800a0003 (multiCamAfRoi) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0004 (multiCamAeRoi) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0005 (multiCamAwbRoi) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0006 (multiCamMasterId) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0007 (multiCamFovCropRegion) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0008 (multiCamSensorCropRegion) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a0009 (multiCamZoomRange) with type 2 (float) defined in section com.mediatek.multicamfeature
+    0x800a000a (multiCamZoomValue) with type 2 (float) defined in section com.mediatek.multicamfeature
+    0x800a000b (multiCamZoomSteps) with type 2 (float) defined in section com.mediatek.multicamfeature
+    0x800a000c (multiCamStreamingId) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a000d (multiCamCaptureCount) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800a000e (multiCamConfigScalerCropRegion) with type 1 (int32) defined in section com.mediatek.multicamfeature
+    0x800b0000 (early.notification.support) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0001 (early.notification.trigger) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0002 (next.ready) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0003 (flipmode) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0004 (availablepostviewmodes) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0005 (postviewsize) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0006 (remosaicenable) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0007 (seamless.remosaicenable) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0008 (available.zsl.modes) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0009 (default.zsl.mode) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b000a (zsl.mode) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b000b (singleYuvNr) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b000c (highQualityYuv) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b000d (hintForRawReprocess) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b000e (hintForIspTuning) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b000f (hintForIspFrameCount) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0010 (hintForIspFrameIndex) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0011 (hintForIspFrameTuningIndex) with type 3 (int64) defined in section com.mediatek.control.capture
+    0x800b0012 (ispMetaEnable) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0013 (ispMetaSizeForRaw) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0014 (ispMetaSizeForYuv) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0015 (ispTuningRequest) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0016 (ispTuningDataRaw) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0017 (ispTuningDataYuv) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0019 (packedRaw.enable) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b001a (processRaw.enable) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b001b (raw.bpp) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b001c (yuvNoMargin) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b001d (singleYuvNr.mode) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b001e (inSensorZoom.mode) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b001f (hidl.jpegyuvtuning) with type 0 (byte) defined in section com.mediatek.control.capture
+    0x800b0020 (raw10.convertfmt) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0021 (p2RawCropResizeEnableCustomize) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0022 (p2CropRegionCustomize) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800b0023 (p2ResizerSizeCustomize) with type 1 (int32) defined in section com.mediatek.control.capture
+    0x800c0000 (availableprereleasemodes) with type 1 (int32) defined in section com.mediatek.bgservicefeature
+    0x800c0001 (prerelease) with type 1 (int32) defined in section com.mediatek.bgservicefeature
+    0x800c0002 (imagereaderid) with type 1 (int32) defined in section com.mediatek.bgservicefeature
+    0x800d0000 (initrequest) with type 1 (int32) defined in section com.mediatek.configure.setting
+    0x800d0001 (yuvdirectjpeg) with type 1 (int32) defined in section com.mediatek.configure.setting
+    0x800d0002 (proprietaryRequest) with type 1 (int32) defined in section com.mediatek.configure.setting
+    0x800e0000 (calibration.available) with type 1 (int32) defined in section com.mediatek.flashfeature
+    0x800e0001 (calibration.enable) with type 1 (int32) defined in section com.mediatek.flashfeature
+    0x800e0002 (calibration.result) with type 1 (int32) defined in section com.mediatek.flashfeature
+    0x800e0003 (calibration.state) with type 1 (int32) defined in section com.mediatek.flashfeature
+    0x800e0004 (customization.available) with type 0 (byte) defined in section com.mediatek.flashfeature
+    0x800e0005 (customizedResult) with type 0 (byte) defined in section com.mediatek.flashfeature
+    0x800e0006 (customizedTorchDuty) with type 0 (byte) defined in section com.mediatek.flashfeature
+    0x800f0000 (smvrMode) with type 1 (int32) defined in section com.mediatek.smvrfeature
+    0x800f0001 (availableSmvrModes) with type 1 (int32) defined in section com.mediatek.smvrfeature
+    0x800f0002 (smvrResult) with type 1 (int32) defined in section com.mediatek.smvrfeature
+    0x80100000 (module) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100001 (sourcecrop) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100002 (transform) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100003 (videostream) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100004 (warpmapx) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100005 (warpmapy) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100006 (warpmapz) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100007 (outstreamstride) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80100008 (warpoutput) with type 1 (int32) defined in section com.mediatek.singlehwsetting
+    0x80110000 (abfMode) with type 1 (int32) defined in section com.mediatek.abffeature
+    0x80110001 (abf) with type 1 (int32) defined in section com.mediatek.abffeature
+    0x80110002 (availableabfmode) with type 1 (int32) defined in section com.mediatek.abffeature
+    0x80120000 (trackingafAvailableModes) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80120001 (trackingafMode) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80120002 (trackingafRegion) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80120003 (trackingafCancel) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80120004 (trackingafTarget) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80120005 (trackingafNoObject) with type 1 (int32) defined in section com.mediatek.trackingaffeature
+    0x80130000 (availableAovModes) with type 1 (int32) defined in section com.mediatek.aovservicefeature
+    0x80130001 (aovMode) with type 1 (int32) defined in section com.mediatek.aovservicefeature
+    0x80130002 (availablePipelineConfig) with type 1 (int32) defined in section com.mediatek.aovservicefeature
+    0x80130003 (pipelineConfig) with type 1 (int32) defined in section com.mediatek.aovservicefeature
+    0x80130004 (availableAovImageSize) with type 1 (int32) defined in section com.mediatek.aovservicefeature
+    0xc0010000 (sensorWbRange) with type 1 (int32) defined in section com.custom.device.capabilities
+    0xc0020000 (sensorWbValue) with type 1 (int32) defined in section com.custom.capture.metadata
+  Dumping vendor tag descriptors for vendor with id 15055940602041719656 
+  Dumping configured vendor tag descriptors: None set
+
+== Camera error traces (0): ==
+  No camera traces collected.
+
+**********Dumpsys from previous open session**********
+== Camera device 0 dynamic info: ==
+  12-09 17:01:29 : Device 0 is open. Client instance dump:
+    Client priority score: 0 state: 2
+    Client PID: 3784
+    Client package: com.mediatek.camera
+  CameraDeviceClient[0] (0xb4000079addbd0b0) dump:
+    Current client UID 10090
+    State:
+      Request ID counter: 2
+      No input stream configured.
+      Current output stream/surface IDs:
+        Stream 1 Surface 0
+        Stream 0 Surface 0
+        Stream 2 Surface 0
+    Latest received frame:
+      Dumping camera metadata array: 99 / 99 entries, 472 / 472 bytes of extra data.
+        Version: 1, Flags: 00000001
+        android.colorCorrection.mode (00000): byte[1]
+          [FAST ]
+        android.colorCorrection.transform (00001): rational[9]
+          [(986 / 512) (-646 / 512) ]
+          [(172 / 512) (-209 / 512) ]
+          [(824 / 512) (-103 / 512) ]
+          [(66 / 512) (-450 / 512) ]
+          [(896 / 512) ]
+        android.colorCorrection.gains (00002): float[4]
+          [1.60742188 1.00000000 1.00000000 1.59179688 ]
+        android.colorCorrection.aberrationMode (00003): byte[1]
+          [OFF ]
+        android.control.aeAntibandingMode (10000): byte[1]
+          [AUTO ]
+        android.control.aeExposureCompensation (10001): int32[1]
+          [0 ]
+        android.control.aeLock (10002): byte[1]
+          [OFF ]
+        android.control.aeMode (10003): byte[1]
+          [ON ]
+        android.control.aeRegions (10004): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.aeTargetFpsRange (10005): int32[2]
+          [5 30 ]
+        android.control.aePrecaptureTrigger (10006): byte[1]
+          [IDLE ]
+        android.control.afMode (10007): byte[1]
+          [OFF ]
+        android.control.afRegions (10008): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.afTrigger (10009): byte[1]
+          [IDLE ]
+        android.control.awbLock (1000a): byte[1]
+          [OFF ]
+        android.control.awbMode (1000b): byte[1]
+          [AUTO ]
+        android.control.awbRegions (1000c): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.captureIntent (1000d): byte[1]
+          [PREVIEW ]
+        android.control.effectMode (1000e): byte[1]
+          [OFF ]
+        android.control.mode (1000f): byte[1]
+          [AUTO ]
+        android.control.sceneMode (10010): byte[1]
+          [DISABLED ]
+        android.control.videoStabilizationMode (10011): byte[1]
+          [OFF ]
+        android.control.aeState (1001f): byte[1]
+          [CONVERGED ]
+        android.control.afState (10020): byte[1]
+          [INACTIVE ]
+        android.control.awbState (10022): byte[1]
+          [CONVERGED ]
+        android.control.postRawSensitivityBoost (10028): int32[1]
+          [100 ]
+        android.control.enableZsl (10029): byte[1]
+          [FALSE ]
+        android.control.zoomRatio (1002f): float[1]
+          [1.00000000 ]
+        android.demosaic.mode (20000): byte[1]
+          [FAST ]
+        android.edge.mode (30000): byte[1]
+          [FAST ]
+        android.edge.strength (30001): byte[1]
+          [5 ]
+        android.flash.firingPower (40000): byte[1]
+          [10 ]
+        android.flash.firingTime (40001): int64[1]
+          [0 ]
+        android.flash.mode (40002): byte[1]
+          [OFF ]
+        android.flash.state (40005): byte[1]
+          [UNAVAILABLE ]
+        android.hotPixel.mode (60000): byte[1]
+          [FAST ]
+        android.jpeg.orientation (70003): int32[1]
+          [0 ]
+        android.jpeg.quality (70004): byte[1]
+          [100 ]
+        android.jpeg.thumbnailQuality (70005): byte[1]
+          [100 ]
+        android.jpeg.thumbnailSize (70006): int32[2]
+          [176 128 ]
+        android.lens.aperture (80000): float[1]
+          [2.40000010 ]
+        android.lens.filterDensity (80001): float[1]
+          [0.00000000 ]
+        android.lens.focalLength (80002): float[1]
+          [5.00000000 ]
+        android.lens.focusDistance (80003): float[1]
+          [0.00000000 ]
+        android.lens.opticalStabilizationMode (80004): byte[1]
+          [OFF ]
+        android.lens.focusRange (80008): float[2]
+          [1.66666663 0.33333334 ]
+        android.lens.state (80009): byte[1]
+          [STATIONARY ]
+        android.noiseReduction.mode (a0000): byte[1]
+          [FAST ]
+        android.noiseReduction.strength (a0001): byte[1]
+          [5 ]
+        android.request.frameCount (c0000): int32[1]
+          [4487 ]
+        android.request.id (c0001): int32[1]
+          [1 ]
+        android.request.metadataMode (c0003): byte[1]
+          [FULL ]
+        android.request.pipelineDepth (c0009): byte[1]
+          [4 ]
+        android.scaler.cropRegion (d0000): int32[4]
+          [0 0 3264 2448 ]
+        android.sensor.exposureTime (e0000): int64[1]
+          [40005000 ]
+        android.sensor.frameDuration (e0001): int64[1]
+          [40000000 ]
+        android.sensor.sensitivity (e0002): int32[1]
+          [168 ]
+        android.sensor.timestamp (e0010): int64[1]
+          [2558304537000 ]
+        android.sensor.neutralColorPoint (e0012): rational[3]
+          [(512 / 823) (512 / 512) ]
+          [(512 / 815) ]
+        android.sensor.noiseProfile (e0013): double[8]
+          [0.00050400 0.00000000 0.00050400 0.00000000 ]
+          [0.00050400 0.00000000 0.00050400 0.00000000 ]
+        android.sensor.greenSplit (e0016): float[1]
+          [0.00000000 ]
+        android.sensor.testPatternData (e0017): int32[4]
+          [0 0 0 0 ]
+        android.sensor.testPatternMode (e0018): int32[1]
+          [OFF ]
+        android.sensor.rollingShutterSkew (e001a): int64[1]
+          [33252000 ]
+        android.shading.mode (100000): byte[1]
+          [FAST ]
+        android.shading.strength (100001): byte[1]
+          [10 ]
+        android.statistics.faceDetectMode (110000): byte[1]
+          [SIMPLE ]
+        android.statistics.histogramMode (110001): byte[1]
+          [OFF ]
+        android.statistics.sharpnessMapMode (110002): byte[1]
+          [OFF ]
+        android.statistics.hotPixelMapMode (110003): byte[1]
+          [OFF ]
+        android.statistics.sceneFlicker (11000e): byte[1]
+          [50HZ ]
+        android.statistics.lensShadingMapMode (110010): byte[1]
+          [OFF ]
+        android.tonemap.curveBlue (130000): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.curveGreen (130001): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.curveRed (130002): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.mode (130003): byte[1]
+          [FAST ]
+        android.blackLevel.lock (160000): byte[1]
+          [OFF ]
+        android.logicalMultiCamera.activePhysicalId (1a0002): byte[2]
+          [48 0 ]
+        com.mediatek.facefeature.forceface3a (80000009): int32[1]
+          [1 ]
+        com.mediatek.nrfeature.3dnrmode (80010000): int32[1]
+          [1 ]
+        com.mediatek.stereofeature.stereowarning (80020003): int32[1]
+          [0 ]
+        com.mediatek.hdrfeature.hdrDetectionResult (80030002): int32[1]
+          [-1 ]
+        com.mediatek.3afeature.afroi (80060001): int32[7]
+          [0 1 1338 930 ]
+          [1924 1516 4 ]
+        com.mediatek.3afeature.awbroi (80060002): int32[7]
+          [0 0 0 0 ]
+          [0 0 0 ]
+        com.mediatek.3afeature.aeIsoSpeed (80060003): int32[1]
+          [0 ]
+        com.mediatek.3afeature.aeAvailableMetering (80060004): byte[3]
+          [0 1 2 ]
+        com.mediatek.3afeature.aeAverageBrightness (80060006): int32[1]
+          [45 ]
+        com.mediatek.3afeature.awbAvailableRange (8006000b): int32[2]
+          [2000 9000 ]
+        com.mediatek.3afeature.aeSensorGain (8006000f): int32[1]
+          [0 ]
+        com.mediatek.3afeature.aeIspGain (80060010): int32[1]
+          [0 ]
+        com.mediatek.3afeature.aeLuxIndex (80060011): int32[1]
+          [0 ]
+        com.mediatek.3afeature.adrcGain (80060012): int32[1]
+          [0 ]
+        com.mediatek.streamingfeature.recordState (80080000): int32[1]
+          [0 ]
+        com.mediatek.control.capture.postviewsize (800b0005): int32[2]
+          [192 144 ]
+        com.mediatek.control.capture.zsl.mode (800b000a): byte[1]
+          [1 ]
+        com.mediatek.configure.setting.initrequest (800d0000): int32[1]
+          [1 ]
+        com.mediatek.configure.setting.proprietaryRequest (800d0002): int32[1]
+          [1 ]
+        com.mediatek.flashfeature.calibration.result (800e0002): int32[1]
+          [0 ]
+        com.mediatek.flashfeature.calibration.state (800e0003): int32[1]
+          [0 ]
+  Device dump:
+    Device status: CONFIGURED
+    Stream configuration:
+    Operation mode: NORMAL (0) 
+      No input stream.
+    Stream[0]: Output
+      Consumer name: SurfaceTexture-0-3784-0
+      State: 4
+      Dims: 640 x 480, format 0x11, dataspace 0x0
+      Max size: 0
+      Combined usage: 0x20133, max HAL buffers: 12
+      Dynamic Range Profile: 0x1
+      Stream use case: 0
+      Timestamp base: 0
+      Frames produced: 4493, last timestamp: 0 ns
+      Total buffers: 15, currently dequeued: 0
+      DequeueBuffer latency histogram: (4493) samples
+        5     10     15     20     25     30     35     40     45    inf (max ms)
+     99.71   0.24   0.04   0.00   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+    Stream[1]: Output
+      Consumer name: ImageReader-3264x2448f21m5-3784-25
+      State: 4
+      Dims: 3264 x 2448, format 0x21, dataspace 0x8c20000
+      Max size: 11985408
+      Combined usage: 0x20033, max HAL buffers: 6
+      Dynamic Range Profile: 0x1
+      Stream use case: 0
+      Timestamp base: 0
+      Frames produced: 0, last timestamp: 0 ns
+      Total buffers: 11, currently dequeued: 0
+    Stream[2]: Output
+      Consumer name: ImageReader-192x144f23m5-3784-26
+      State: 4
+      Dims: 192 x 144, format 0x23, dataspace 0x8c20000
+      Max size: 0
+      Combined usage: 0x20033, max HAL buffers: 12
+      Dynamic Range Profile: 0x1
+      Stream use case: 0
+      Timestamp base: 0
+      Frames produced: 0, last timestamp: 0 ns
+      Total buffers: 17, currently dequeued: 0
+    Camera3 Buffer Manager:
+      Total stream sets: 0
+    In-flight requests:
+      None
+    ProcessCaptureRequest latency histogram: (4493) samples
+       40     80    120    160    200    240    280    320    360    inf (max ms)
+     82.60   17.38   0.00   0.02   0.00   0.00   0.00   0.00   0.00   0.00 (%)
+    Last request sent:
+      Dumping camera metadata array: 70 / 70 entries, 288 / 288 bytes of extra data.
+        Version: 1, Flags: 00000001
+        android.colorCorrection.mode (00000): byte[1]
+          [FAST ]
+        android.colorCorrection.transform (00001): rational[9]
+          [(1 / 1) (0 / 1) ]
+          [(0 / 1) (0 / 1) ]
+          [(1 / 1) (0 / 1) ]
+          [(0 / 1) (0 / 1) ]
+          [(1 / 1) ]
+        android.colorCorrection.gains (00002): float[4]
+          [1.00000000 1.00000000 1.00000000 1.00000000 ]
+        android.colorCorrection.aberrationMode (00003): byte[1]
+          [OFF ]
+        android.control.aeAntibandingMode (10000): byte[1]
+          [AUTO ]
+        android.control.aeExposureCompensation (10001): int32[1]
+          [0 ]
+        android.control.aeLock (10002): byte[1]
+          [OFF ]
+        android.control.aeMode (10003): byte[1]
+          [ON ]
+        android.control.aeRegions (10004): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.aeTargetFpsRange (10005): int32[2]
+          [5 30 ]
+        android.control.aePrecaptureTrigger (10006): byte[1]
+          [IDLE ]
+        android.control.afMode (10007): byte[1]
+          [OFF ]
+        android.control.afRegions (10008): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.afTrigger (10009): byte[1]
+          [IDLE ]
+        android.control.awbLock (1000a): byte[1]
+          [OFF ]
+        android.control.awbMode (1000b): byte[1]
+          [AUTO ]
+        android.control.awbRegions (1000c): int32[5]
+          [0 0 0 0 ]
+          [0 ]
+        android.control.captureIntent (1000d): byte[1]
+          [PREVIEW ]
+        android.control.effectMode (1000e): byte[1]
+          [OFF ]
+        android.control.mode (1000f): byte[1]
+          [AUTO ]
+        android.control.sceneMode (10010): byte[1]
+          [DISABLED ]
+        android.control.videoStabilizationMode (10011): byte[1]
+          [OFF ]
+        android.control.postRawSensitivityBoost (10028): int32[1]
+          [100 ]
+        android.control.enableZsl (10029): byte[1]
+          [FALSE ]
+        android.control.zoomRatio (1002f): float[1]
+          [1.00000000 ]
+        android.demosaic.mode (20000): byte[1]
+          [FAST ]
+        android.edge.mode (30000): byte[1]
+          [FAST ]
+        android.edge.strength (30001): byte[1]
+          [5 ]
+        android.flash.firingPower (40000): byte[1]
+          [10 ]
+        android.flash.firingTime (40001): int64[1]
+          [0 ]
+        android.flash.mode (40002): byte[1]
+          [OFF ]
+        android.hotPixel.mode (60000): byte[1]
+          [FAST ]
+        android.jpeg.orientation (70003): int32[1]
+          [0 ]
+        android.jpeg.quality (70004): byte[1]
+          [100 ]
+        android.jpeg.thumbnailQuality (70005): byte[1]
+          [100 ]
+        android.jpeg.thumbnailSize (70006): int32[2]
+          [176 128 ]
+        android.lens.aperture (80000): float[1]
+          [2.40000010 ]
+        android.lens.filterDensity (80001): float[1]
+          [0.00000000 ]
+        android.lens.focalLength (80002): float[1]
+          [5.00000000 ]
+        android.lens.focusDistance (80003): float[1]
+          [0.00000000 ]
+        android.lens.opticalStabilizationMode (80004): byte[1]
+          [OFF ]
+        android.noiseReduction.mode (a0000): byte[1]
+          [FAST ]
+        android.noiseReduction.strength (a0001): byte[1]
+          [5 ]
+        android.request.id (c0001): int32[1]
+          [1 ]
+        android.request.metadataMode (c0003): byte[1]
+          [FULL ]
+        android.scaler.cropRegion (d0000): int32[4]
+          [0 0 3264 2448 ]
+        android.sensor.exposureTime (e0000): int64[1]
+          [10000000 ]
+        android.sensor.frameDuration (e0001): int64[1]
+          [33333333 ]
+        android.sensor.sensitivity (e0002): int32[1]
+          [0 ]
+        android.sensor.testPatternData (e0017): int32[4]
+          [0 0 0 0 ]
+        android.sensor.testPatternMode (e0018): int32[1]
+          [OFF ]
+        android.shading.mode (100000): byte[1]
+          [FAST ]
+        android.shading.strength (100001): byte[1]
+          [10 ]
+        android.statistics.faceDetectMode (110000): byte[1]
+          [SIMPLE ]
+        android.statistics.histogramMode (110001): byte[1]
+          [OFF ]
+        android.statistics.sharpnessMapMode (110002): byte[1]
+          [OFF ]
+        android.statistics.hotPixelMapMode (110003): byte[1]
+          [OFF ]
+        android.statistics.lensShadingMapMode (110010): byte[1]
+          [OFF ]
+        android.tonemap.curveBlue (130000): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.curveGreen (130001): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.curveRed (130002): float[4]
+          [0.00000000 0.00000000 1.00000000 1.00000000 ]
+        android.tonemap.mode (130003): byte[1]
+          [FAST ]
+        android.blackLevel.lock (160000): byte[1]
+          [OFF ]
+        com.mediatek.facefeature.forceface3a (80000009): int32[1]
+          [1 ]
+        com.mediatek.nrfeature.3dnrmode (80010000): int32[1]
+          [1 ]
+        com.mediatek.3afeature.aeIsoSpeed (80060003): int32[1]
+          [0 ]
+        com.mediatek.control.capture.postviewsize (800b0005): int32[2]
+          [192 144 ]
+        com.mediatek.control.capture.zsl.mode (800b000a): byte[1]
+          [1 ]
+        com.mediatek.configure.setting.initrequest (800d0000): int32[1]
+          [1 ]
+        com.mediatek.configure.setting.proprietaryRequest (800d0002): int32[1]
+          [1 ]
+     Tag monitoring disabled (enable with -m <name1,..,nameN>)
+     HAL device dump:
+
+**********End of Dumpsys from previous open session**********

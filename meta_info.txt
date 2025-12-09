@@ -1,0 +1,7 @@
+host_time: 2025-12-09T17:03:46+08:00
+device_time_and_uptime:
+Tue Dec  9 17:04:07 GMT 2025
+ 17:04:07 up  1:10,  0 users,  load average: 6.01, 7.58, 8.16
+device_time_after_collection:
+Tue Dec  9 17:05:30 GMT 2025
+ 17:05:30 up  1:11,  0 users,  load average: 6.80, 7.45, 8.06

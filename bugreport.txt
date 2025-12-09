@@ -1,0 +1,2 @@
+/data/user_de/0/com.android.shell/files/bugreports/bugreport-vnd_tb8168p1_64_bsp_k510-TQ3A.230805.001.S2-2025-12-09-17-04-14.zip: 1 file pulled, 0 skipped. 26.8 MB/s (3065457 bytes in 0.109s)
+Bug report copied to /D/log/2025/1209/111/bugreport-vnd_tb8168p1_64_bsp_k510-TQ3A.230805.001.S2-2025-12-09-17-04-14.zip

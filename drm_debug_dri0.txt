@@ -1,0 +1,252 @@
+             command   pid dev master a   uid      magic
+     composer@2.1-se   450   0   y    y  1000          0
+     composer@2.1-se   450   0   n    n  1000          0
+      pq@2.2-service   656   0   n    n  1000          0
+framebuffer[117]:
+	allocated by = OverlayEngine_0
+	refcount=1
+	format=AB24 little-endian (0x34324241)
+	modifier=0xa00000000000001
+	size=480x800
+	layers:
+		size[0]=480x800
+		pitch[0]=1920
+		offset[0]=0
+		obj[0]:(null)
+framebuffer[116]:
+	allocated by = OverlayEngine_0
+	refcount=1
+	format=AB24 little-endian (0x34324241)
+	modifier=0xa00000000000001
+	size=480x800
+	layers:
+		size[0]=480x800
+		pitch[0]=1920
+		offset[0]=0
+		obj[0]:(null)
+framebuffer[118]:
+	allocated by = OverlayEngine_0
+	refcount=1
+	format=AB24 little-endian (0x34324241)
+	modifier=0xa00000000000001
+	size=480x800
+	layers:
+		size[0]=480x800
+		pitch[0]=1920
+		offset[0]=0
+		obj[0]:(null)
+framebuffer[121]:
+	allocated by = OverlayEngine_0
+	refcount=1
+	format=AB24 little-endian (0x34324241)
+	modifier=0xa00000000000001
+	size=480x36
+	layers:
+		size[0]=480x36
+		pitch[0]=1920
+		offset[0]=0
+		obj[0]:(null)
+framebuffer[104]:
+	allocated by = composer@2.1-se
+	refcount=1
+	format=RGB8 little-endian (0x38424752)
+	modifier=0x0
+	size=480x800
+	layers:
+		size[0]=480x800
+		pitch[0]=480
+		offset[0]=0
+		obj[0]:(null)
+framebuffer[103]:
+	allocated by = android.hardwar
+	refcount=1
+	format=C8   little-endian (0x20203843)
+	modifier=0xa00000000000001
+	size=4096x4096
+	layers:
+		size[0]=4096x4096
+		pitch[0]=4096
+		offset[0]=0
+		obj[0]:(null)
+  name     size handles refcount
+mediatek dev=14000000.mmsys_config unique=14000000.mmsys_config
+plane[33]: plane-0
+	crtc=(null)
+	fb=0
+	crtc-pos=480x800+0+0
+	src-pos=480.000000x800.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[45]: plane-1
+	crtc=(null)
+	fb=0
+	crtc-pos=480x36+0+0
+	src-pos=480.000000x36.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[47]: plane-2
+	crtc=(null)
+	fb=0
+	crtc-pos=480x800+0+0
+	src-pos=480.000000x800.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[49]: plane-3
+	crtc=(null)
+	fb=0
+	crtc-pos=480x800+0+0
+	src-pos=480.000000x800.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[51]: plane-4
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[53]: plane-5
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[55]: plane-6
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[57]: plane-7
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[59]: plane-8
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[61]: plane-9
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[63]: plane-10
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[65]: plane-11
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[89]: plane-12
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[98]: plane-13
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+plane[100]: plane-14
+	crtc=(null)
+	fb=0
+	crtc-pos=0x0+0+0
+	src-pos=0.000000x0.000000+0.000000+0.000000
+	rotation=0
+	normalized-zpos=0
+	color-encoding=ITU-R BT.601 YCbCr
+	color-range=YCbCr limited range
+crtc[67]: crtc-0
+	enable=1
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=1
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=1
+	encoder_mask=1
+	mode: "480x800": 58 37500 480 600 610 680 800 920 930 948 0x48 0x0
+crtc[91]: crtc-1
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+crtc[102]: crtc-2
+	enable=0
+	active=0
+	self_refresh_active=0
+	planes_changed=0
+	mode_changed=0
+	active_changed=0
+	connectors_changed=0
+	color_mgmt_changed=0
+	plane_mask=0
+	connector_mask=0
+	encoder_mask=0
+	mode: "": 0 0 0 0 0 0 0 0 0 0 0x0 0x0
+connector[32]: DSI-1
+	crtc=crtc-0
+	self_refresh_aware=0
+connector[97]: Writeback-1
+	crtc=(null)
+	self_refresh_aware=0

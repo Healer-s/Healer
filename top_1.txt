@@ -1,0 +1,25 @@
+[s[999C[999B[6n[u[H[J[?25l[H[J[s[999C[999B[6n[uTasks: 343 total,   1 running, 342 sleeping,   0 stopped,   0 zombie
+  Mem:  3889512K total,  3253496K used,   636016K free,   140512K buffers
+ Swap:  2139224K total,        0K used,  2139224K free,  1875252K cached
+400%cpu   3%user   0%nice  13%sys 377%idle   0%iow   3%irq   3%sirq   0%host
+[7m  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS            [0m
+[1m 6180 root         20   0  10G 4.6M 3.8M R 16.6   0.1   0:00.09 top -n 1 -m 20[m
+ 6098 root         20   0  10G 6.5M 5.2M S  0.0   0.1   0:02.45 adbd --root_sec+
+ 5948 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/1:0H]
+ 5942 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u8:0-e+
+ 5822 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:6-mm+
+ 5820 root         20   0    0    0    0 I  0.0   0.0   0:03.07 [kworker/2:5-ev+
+ 5814 root         20   0    0    0    0 I  0.0   0.0   0:03.77 [kworker/0:3-ev+
+ 5806 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-ev+
+ 5566 root         20   0    0    0    0 I  0.0   0.0   0:02.03 [kworker/0:0-ev+
+ 5560 root         20   0    0    0    0 I  0.0   0.0   0:01.17 [kworker/u8:9-g+
+ 5440 root         20   0    0    0    0 I  0.0   0.0   0:01.93 [kworker/u8:3-e+
+ 5311 root         20   0    0    0    0 I  0.0   0.0   0:05.05 [kworker/1:0-ev+
+ 5192 root         20   0    0    0    0 I  0.0   0.0   0:02.19 [kworker/3:5-ev+
+ 5190 root         20   0    0    0    0 I  0.0   0.0   0:06.04 [kworker/3:2-ev+
+ 5189 root          0 -20    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:0H]
+ 5183 root         20   0    0    0    0 I  0.0   0.0   0:01.25 [kworker/u8:1-e+
+ 5032 root          0 -20    0    0    0 I  0.0   0.0   0:04.47 [kworker/u9:0-k+
+ 4939 root          0 -20    0    0    0 I  0.0   0.0   0:00.05 [kworker/2:0H-k+
+ 4933 root         20   0    0    0    0 I  0.0   0.0   0:04.01 [kworker/u8:6-a+
+ 4932 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/3:1-pm][?25h[0m[999H[K[?25h[?25h[0m[999H[K
